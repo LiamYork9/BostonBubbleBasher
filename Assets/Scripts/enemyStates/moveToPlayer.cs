@@ -49,7 +49,7 @@ public class moveToPlayer : SM_State
 
         if (((enemyStateMachiene)stateMachine).isWaiting == true)
         {
-            ((enemyStateMachiene)stateMachine).ChangeState(nameof(waitinZone));
+            ((enemyStateMachiene)stateMachine).ChangeState(nameof(attack));
         }
     }
     public override void OnExit()
