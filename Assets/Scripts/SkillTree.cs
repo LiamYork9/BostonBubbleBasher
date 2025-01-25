@@ -8,10 +8,25 @@ public class SkillTree : MonoBehaviour
     public TextMeshProUGUI defNumberText;
     public TextMeshProUGUI speedNumberText;
     public TextMeshProUGUI hpNumberText;
+
+    public TextMeshProUGUI fireballText;
+    public TextMeshProUGUI poisonText;
+
+    public TextMeshProUGUI reactShieldText;
+    public TextMeshProUGUI placeShieldText;
+
     int atkCounter;
     int defCounter;
     int speedCounter;
     int hpCounter;
+
+    int fireballChecker;
+    int poisonChecker;
+
+    int reactShieldChecker;
+    int placeShieldChecker;
+
+    int requireVal;
 
     public void atkButonPressed()
     {
@@ -35,6 +50,30 @@ public class SkillTree : MonoBehaviour
     {
         hpCounter++;
         hpNumberText.text = "HP" + hpCounter + "";
+    }
+
+    public void fireballButtonPressed()
+    {
+        fireballChecker++;
+        fireballText.color = Color.gray;
+    }
+
+    public void poisonButtonPressed()
+    {
+        poisonChecker++;
+        poisonText.color = Color.gray;
+    }
+
+    public void reactShieldButtonPressed()
+    {
+        reactShieldChecker++;
+        reactShieldText.color = Color.gray;
+    }
+
+    public void placeShieldButtonPressed()
+    {
+        placeShieldChecker++;
+        placeShieldText.color = Color.gray;
     }
 
 }
