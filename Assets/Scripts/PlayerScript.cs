@@ -21,6 +21,8 @@ public class PlayerScript : MonoBehaviour
 
     public Rigidbody2D rb;
 
+    public CameraMove moveCamera;
+
     Vector2 movement;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -46,6 +48,21 @@ public class PlayerScript : MonoBehaviour
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    { 
+        if (other.gameObject.CompareTag("TargetArea")) 
+        {
+             moveCamera.begin = true;
+        }
+
+        if(other.gameObject.CompareTag("TargetArea2"))
+        {
+             moveCamera.begin2 = true;
+        }
+    }
+       
+    
 
     void Die()
     {
