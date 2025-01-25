@@ -802,7 +802,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   areaRange: 1.5
-  baller: In Attack Area
+  enemyQueue: []
 --- !u!1 &4117321841638916264
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,7 +944,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   areaRange: 3.5
-  baller: Waiting
+  enemyQueue: []
 --- !u!1 &5042937388637831684
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,6 +1224,7 @@ GameObject:
   - component: {fileID: 184108058451270748}
   - component: {fileID: 6547095928965129261}
   - component: {fileID: 5082659170782493607}
+  - component: {fileID: 119570399954319802}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1344,6 +1345,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lv: 1
+  facing: 1
+  stayFacing: 0
   exp: 0
   currentExp: 0
   skillPoint: 0
@@ -1402,6 +1405,24 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &119570399954319802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6819233813233282278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59dca1e26856dbe47b93d289850b55b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  i: 0
+  spellSpeed: 1
+  meleeAttacks:
+  - {fileID: 2440483079986555638, guid: 98dce88118aa23f4d9caa1a8e74ce6a2, type: 3}
+  magicAttacks:
+  - {fileID: 2440483079986555638, guid: d3eb48bcfb321b346abbbfa197dd69a5, type: 3}
 --- !u!1 &7528672577201262063
 GameObject:
   m_ObjectHideFlags: 0
