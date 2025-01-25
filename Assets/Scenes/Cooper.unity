@@ -482,7 +482,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeout:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1924591139}
+        m_TargetAssemblyTypeName: enemyStateMachiene, Assembly-CSharp
+        m_MethodName: doneWaiting
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   timeLeft: 0
   timeSet: 1
 --- !u!50 &1924591137
@@ -498,8 +510,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 1.5
+  m_AngularDamping: 0.67
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -511,7 +523,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1924591138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,8 +590,10 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     stateMachine: {fileID: 0}
+    timeLeft: 0
+    attacktime: 1
   target: {fileID: 1409605684}
-  speed: 200
+  speed: 400
   nextWaypointDistance: 3
   enemyGFX: {fileID: 29388287}
   currentWaypoint: 0
@@ -590,6 +604,7 @@ MonoBehaviour:
   AttackZone: {fileID: 0}
   isWaiting: 0
   timer: {fileID: 0}
+  damage: 5
 --- !u!4 &1924591140
 Transform:
   m_ObjectHideFlags: 0
