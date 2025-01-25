@@ -7,17 +7,17 @@ namespace StateMachine
 {
     public class SM_StateMachine : MonoBehaviour
     {
-        protected State m_state = null;
+        protected SM_State m_state = null;
 
         [HideInInspector]
-        public List<State> states;
+        public List<SM_State> states;
         public string stateName;
 
-        private void SetState(State _state)
+        private void SetState(SM_State _state)
         {
-            if (states == null)
+            if (_state == null)
                 return;
-            if(states != null)
+            if(m_state != null)
             {
                 m_state.stateExited.Invoke();
                 m_state.OnExit();
@@ -32,7 +32,7 @@ namespace StateMachine
 
         public void ChangeState(string _stateName)
         {
-            foreach (State s in states)
+            foreach (SM_State s in states)
             {
                 if(_stateName.ToLower() == s.GetType().ToString().ToLower())
                 {
