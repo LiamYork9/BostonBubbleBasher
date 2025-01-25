@@ -12,17 +12,27 @@ public class UIToggle : MonoBehaviour
         canvas.SetActive(!canvas.activeInHierarchy);
     }
 
+    public void Resume()
+    {
+        Time.timeScale = 1f;
+        paused= false;
+    }
+
+    void Pause()
+    {
+        Time.timeScale = 0f;
+        paused = true;
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.T))
         {
-            if(paused == false) 
+            if(paused) 
             {
-                paused = true;
-                Time.timeScale = 0.0f;
+                Resume();
             } else {
-                paused = false;
-                Time.timeScale = 1.0f;
+                Pause();
             }
         toggleCanvas();
         }
