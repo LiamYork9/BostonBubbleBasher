@@ -9,6 +9,7 @@ public class PlayerScript : MonoBehaviour
     public int currentExp = 0;
 
     public int skillPoint = 0;
+    
     public int hp = 10;
 
 

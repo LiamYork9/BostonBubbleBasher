@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 935302110825945020}
   m_Layer: 0
   m_Name: WaitingArea
-  m_TagString: Untagged
+  m_TagString: WaitArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 5082659170782493607}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
