@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 645638387}
   m_Layer: 0
   m_Name: Point (2)
-  m_TagString: Untagged
+  m_TagString: BossPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -310,7 +310,7 @@ GameObject:
   - component: {fileID: 789722563}
   m_Layer: 0
   m_Name: Point (4)
-  m_TagString: Untagged
+  m_TagString: BossPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -395,6 +395,8 @@ GameObject:
   m_Component:
   - component: {fileID: 984247985}
   - component: {fileID: 984247984}
+  - component: {fileID: 984247986}
+  - component: {fileID: 984247987}
   m_Layer: 0
   m_Name: BigMan
   m_TagString: Untagged
@@ -473,6 +475,82 @@ Transform:
   - {fileID: 1214085580}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &984247986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984247983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9fe97341f7c89543bafdd9c9279de79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  states: []
+  stateName: 
+  random:
+    stateStart:
+      m_PersistentCalls:
+        m_Calls: []
+    stateExited:
+      m_PersistentCalls:
+        m_Calls: []
+    stateMachine: {fileID: 0}
+  conShooting:
+    stateStart:
+      m_PersistentCalls:
+        m_Calls: []
+    stateExited:
+      m_PersistentCalls:
+        m_Calls: []
+    stateMachine: {fileID: 0}
+  kick:
+    stateStart:
+      m_PersistentCalls:
+        m_Calls: []
+    stateExited:
+      m_PersistentCalls:
+        m_Calls: []
+    stateMachine: {fileID: 0}
+  points:
+  - {fileID: 1551928261}
+  - {fileID: 1644303993}
+  - {fileID: 645638386}
+  - {fileID: 1330473122}
+  - {fileID: 789722562}
+  curPoint: {fileID: 0}
+  speed: 1
+  player: {fileID: 0}
+  gun: {fileID: 0}
+  rb: {fileID: 0}
+--- !u!50 &984247987
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984247983}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1111777141
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -544,9 +622,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1214085580}
   - component: {fileID: 1214085581}
+  - component: {fileID: 1214085582}
   m_Layer: 0
   m_Name: BigManGun
-  m_TagString: Untagged
+  m_TagString: BossGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -621,6 +700,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1214085582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214085579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d89777fde4b8b1944b7d1a57d2687181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1330473121
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,7 +724,7 @@ GameObject:
   - component: {fileID: 1330473123}
   m_Layer: 0
   m_Name: Point (3)
-  m_TagString: Untagged
+  m_TagString: BossPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -720,7 +811,7 @@ GameObject:
   - component: {fileID: 1551928262}
   m_Layer: 0
   m_Name: Point
-  m_TagString: Untagged
+  m_TagString: BossPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -847,7 +938,7 @@ GameObject:
   - component: {fileID: 1644303994}
   m_Layer: 0
   m_Name: Point (1)
-  m_TagString: Untagged
+  m_TagString: BossPoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

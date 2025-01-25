@@ -1,16 +1,19 @@
+using StateMachine;
 using UnityEngine;
 
-public class ConsecutiveShooting : MonoBehaviour
+[System.Serializable]
+public class ConsecutiveShooting : SM_State
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public override void OnStart()
     {
-        
+        base.OnStart();
     }
-
-    // Update is called once per frame
-    void Update()
+    public override void UpdateState(float _dt)
     {
-        
+        base.UpdateState(_dt);
+    }
+    public override void OnExit()
+    {
+        base.OnExit();
     }
 }

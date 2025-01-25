@@ -10,6 +10,8 @@ TagManager:
   - AreaTranstion1
   - TargetArea2
   - Enemy
+  - BossPoints
+  - BossGun
   layers:
   - Default
   - TransparentFX
