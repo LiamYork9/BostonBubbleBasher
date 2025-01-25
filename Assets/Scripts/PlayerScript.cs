@@ -8,6 +8,8 @@ public class PlayerScript : MonoBehaviour
     public int lv = 1;
     public int facing = 1;
 
+    public bool stayFacing = false;
+
     public int exp = 0;
 
     public int currentExp = 0;
@@ -44,11 +46,30 @@ public class PlayerScript : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-       if (Input.GetKeyDown("space"))
+        
+
+        if (Input.GetKeyDown("space"))
         {
             hp -= 5;
         }
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            stayFacing = true;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            stayFacing = false;
+        }
 
+        if(movement.x<0 && !stayFacing)
+        {
+            facing = -1;
+        }
+        else if (movement.x>0 && !stayFacing)
+        {
+            facing = 1;
+        }
+        
         Die();
 
         if(Input.GetKeyDown(KeyCode.R))

@@ -12,14 +12,14 @@ public class Combat : MonoBehaviour
     {
         if (meleeAttacks[attackPrefab] != null)
         {
-            (Instantiate(meleeAttacks[attackPrefab],transform.position+(new Vector3(1.0f,0.0f,0.0f)),transform.rotation)).GetComponent<Attack>().damage=damage;
+            (Instantiate(meleeAttacks[attackPrefab],transform.position+(new Vector3(1.0f*gameObject.GetComponent<PlayerScript>().facing,0.0f,0.0f)),transform.rotation)).GetComponent<Attack>().damage=damage;
         }
     }
     public void Cast(int spellPrefab, int damage)
     {
         if (magicAttacks[spellPrefab] != null)
         {
-            GameObject temp = (Instantiate(magicAttacks[spellPrefab],transform.position+(new Vector3(1.0f,0.0f,0.0f)),transform.rotation));
+            GameObject temp = (Instantiate(magicAttacks[spellPrefab],transform.position+(new Vector3(1.0f*gameObject.GetComponent<PlayerScript>().facing,0.0f,0.0f)),transform.rotation));
             temp.GetComponent<Attack>().damage=damage;
             temp.GetComponent<MoveOverTime>().speed=spellSpeed* gameObject.GetComponent<PlayerScript>().facing;
         }
