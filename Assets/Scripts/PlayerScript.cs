@@ -11,8 +11,6 @@ public class PlayerScript : MonoBehaviour
     public int skillPoint = 0;
     
     public int hp = 10;
-
-
     public int moveSpeed = 5;
 
     public int attack = 5;
