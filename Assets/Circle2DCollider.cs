@@ -1,12 +1,15 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
 
 public class Circle2DCollider : MonoBehaviour
 {
     public LayerMask enemyLayers;
 
     public float areaRange = 0.5f;
-
-    public string baller;
+    public List<Collider2D> enemyQueue;
     void Start()
     {
         
@@ -22,10 +25,12 @@ public class Circle2DCollider : MonoBehaviour
     {
         Collider2D[] enemiesInArea = Physics2D.OverlapCircleAll(transform.position, areaRange, enemyLayers);
 
-        foreach(Collider2D enemy in enemiesInArea)
+        for(int i = 0; i < enemiesInArea.Length; i++)
         {
-            Debug.Log(baller + enemy.name);
+            enemyQueue = enemiesInArea.ToList();
         }
+
+        
     }
 
     void OnDrawGizmosSelected()
