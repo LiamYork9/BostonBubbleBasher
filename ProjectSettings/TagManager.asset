@@ -10,15 +10,17 @@ TagManager:
   - AreaTranstion1
   - TargetArea2
   - Enemy
+  - BossPoints
+  - BossGun
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Enemy
-  - 
+  - AiSpacer
   - 
   - 
   - 
