@@ -660,7 +660,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e924f6059e8f047a052aa5cc5d6654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentSceneName: LiamYork
   sceneName: MainMenu
 --- !u!1 &3578606603996805034
 GameObject:
@@ -673,6 +672,7 @@ GameObject:
   - component: {fileID: 8197244515511007720}
   - component: {fileID: 4883848015558259665}
   - component: {fileID: 1894620679561470944}
+  - component: {fileID: 2573411788724672178}
   m_Layer: 0
   m_Name: EnemyAttackArea
   m_TagString: EnemyAttackArea
@@ -757,7 +757,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3578606603996805034}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -786,6 +786,23 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 1.5
+--- !u!114 &2573411788724672178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3578606603996805034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d6d2c92f47e07d4daf34256338f0547, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  areaRange: 1.5
+  baller: In Attack Area
 --- !u!1 &4117321841638916264
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,6 +814,7 @@ GameObject:
   - component: {fileID: 5046999718537797954}
   - component: {fileID: 6351716083895763596}
   - component: {fileID: 935302110825945020}
+  - component: {fileID: 8385461794487682226}
   m_Layer: 0
   m_Name: WaitingArea
   m_TagString: WaitArea
@@ -881,7 +899,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4117321841638916264}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -910,6 +928,23 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 3.5
+--- !u!114 &8385461794487682226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4117321841638916264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d6d2c92f47e07d4daf34256338f0547, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  areaRange: 3.5
+  baller: Waiting
 --- !u!1 &5042937388637831684
 GameObject:
   m_ObjectHideFlags: 0
@@ -1318,6 +1353,8 @@ MonoBehaviour:
   defence: 1
   rb: {fileID: 184108058451270748}
   moveCamera: {fileID: 0}
+  lvText: {fileID: 0}
+  spText: {fileID: 0}
   deathScreen: {fileID: 3502048743722885915}
 --- !u!61 &5082659170782493607
 BoxCollider2D:
