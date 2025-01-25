@@ -22,10 +22,12 @@ public class PlayerScript : MonoBehaviour
     public CameraMove moveCamera;
 
     Vector2 movement;
+
+    public GameObject deathScreen;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Time.timeScale = 1.0f;
     }
 
     // Update is called once per frame
@@ -66,7 +68,9 @@ public class PlayerScript : MonoBehaviour
     {
         if(hp == 0.0f)
         {
+            deathScreen.SetActive(true);
             Debug.Log("DIED");
+            Time.timeScale = 0.0f;
         }
     }
 }
