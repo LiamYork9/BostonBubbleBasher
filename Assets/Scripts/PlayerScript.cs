@@ -11,8 +11,6 @@ public class PlayerScript : MonoBehaviour
     public int skillPoint = 0;
     
     public int hp = 10;
-
-
     public int moveSpeed = 5;
 
     public int attack = 5;
@@ -21,11 +19,15 @@ public class PlayerScript : MonoBehaviour
 
     public Rigidbody2D rb;
 
+    public CameraMove moveCamera;
+
     Vector2 movement;
+
+    public GameObject deathScreen;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Time.timeScale = 1.0f;
     }
 
     // Update is called once per frame
@@ -47,11 +49,28 @@ public class PlayerScript : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    { 
+        if (other.gameObject.CompareTag("TargetArea")) 
+        {
+             moveCamera.begin = true;
+        }
+
+        if(other.gameObject.CompareTag("TargetArea2"))
+        {
+             moveCamera.begin2 = true;
+        }
+    }
+       
+    
+
     void Die()
     {
         if(hp == 0.0f)
         {
+            deathScreen.SetActive(true);
             Debug.Log("DIED");
+            Time.timeScale = 0.0f;
         }
     }
 }
