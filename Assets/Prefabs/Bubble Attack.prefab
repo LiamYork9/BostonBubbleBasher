@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3586913982117339443}
   - component: {fileID: -696755987319576935}
   - component: {fileID: 2440918126880683600}
+  - component: {fileID: 452250693446091500}
   m_Layer: 0
   m_Name: Bubble Attack
   m_TagString: Untagged
@@ -166,3 +167,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
+--- !u!114 &452250693446091500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2440483079986555638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bdaa3bc7522d1b4085a8a0087dfae60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTimer: {fileID: 0}
+  duration: 1
