@@ -473,7 +473,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1537407534}
         m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: hpButonPressed
+        m_MethodName: heal2ButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -821,7 +821,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1537407534}
         m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: speedButonPressed
+        m_MethodName: telepopButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -930,7 +930,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9716981, g: 0.01375042, b: 0.01375042, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.9604409, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2435,7 +2435,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1537407534}
         m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: hpButonPressed
+        m_MethodName: healButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2889,6 +2889,19 @@ MonoBehaviour:
   poisonText: {fileID: 1484537952}
   reactShieldText: {fileID: 1887122754}
   placeShieldText: {fileID: 578869201}
+  telepopText: {fileID: 208083247}
+  soapText: {fileID: 2114572728}
+  healText: {fileID: 86699514}
+  heal2Text: {fileID: 1848991837}
+  fireButton: {fileID: 454100091}
+  poisonButt: {fileID: 986850279}
+  reactShieldButt: {fileID: 1235849857}
+  placeShieldButt: {fileID: 1923932806}
+  telepopButt: {fileID: 262348730}
+  soapButt: {fileID: 2027942218}
+  healButt: {fileID: 1442356871}
+  heal2Butt: {fileID: 133576624}
+  requireVal: 0
 --- !u!1 &1848991835
 GameObject:
   m_ObjectHideFlags: 0
@@ -3379,7 +3392,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1537407534}
         m_TargetAssemblyTypeName: SkillTree, Assembly-CSharp
-        m_MethodName: speedButonPressed
+        m_MethodName: soapButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
