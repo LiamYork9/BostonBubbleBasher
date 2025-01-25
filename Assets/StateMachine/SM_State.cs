@@ -3,7 +3,7 @@ using UnityEngine;
 namespace StateMachine
 {
     [System.Serializable]
-    public class State
+    public class SM_State
     {
         private bool m_isActive = false;
 
