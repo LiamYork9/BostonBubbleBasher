@@ -1,4 +1,7 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -20,6 +23,10 @@ public class PlayerScript : MonoBehaviour
     public Rigidbody2D rb;
 
     public CameraMove moveCamera;
+
+    public Text lvText;
+
+    public Text spText;
 
     Vector2 movement;
 
@@ -49,6 +56,9 @@ public class PlayerScript : MonoBehaviour
      }
 
      LevelUp();
+        lvText.text = "LV: " + lv;
+        spText.text = "Skill Points: " + skillPoint;
+
     }
 
      void FixedUpdate() 
