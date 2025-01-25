@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerScript : MonoBehaviour
 {
     public int lv = 1;
+    public int facing = 1;
 
     public int exp = 0;
 
