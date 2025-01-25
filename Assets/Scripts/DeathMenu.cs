@@ -4,13 +4,12 @@ using UnityEngine.SceneManagement;
 
 public class DeathMenu : MonoBehaviour
 {
-    public string currentSceneName;
-
+    
     public string sceneName;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-         string currentSceneName = SceneManager.GetActiveScene().name;
+         
     }
 
     // Update is called once per frame
@@ -22,7 +21,7 @@ public class DeathMenu : MonoBehaviour
     public void Retry()
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene(currentSceneName);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         
     }
 
