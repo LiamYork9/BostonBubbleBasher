@@ -1,10 +1,7 @@
-using System;
-using JetBrains.Annotations;
 using UnityEngine;
 
-public class waitingAreaTrigger : MonoBehaviour
+public class BossGun : MonoBehaviour
 {
-    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,4 +14,3 @@ public class waitingAreaTrigger : MonoBehaviour
         
     }
 }
-

@@ -4,7 +4,7 @@ using UnityEngine;
 [System.Serializable]
 
 public class attack : SM_State
-{    
+{
     public float attackRate = .5f;
     public float nextAttack = -1.0f;
     public bool canAttack = true;
@@ -12,34 +12,32 @@ public class attack : SM_State
     {
         base.OnStart();
         Debug.Log("Attacking");
+        
         nextAttack = Time.time + attackRate;
+        ((enemyStateMachiene)stateMachine).isAttacking = true;
 
     }
     public override void UpdateState(float _dt)
     {
         base.UpdateState(_dt);
-        if(Time.time > nextAttack)
+        
+        if (Time.time > nextAttack)
         {
             canAttack = true;
         }
-        if(canAttack){
-            if (((enemyStateMachiene)stateMachine).inRange == true)
-            {
-                ((enemyStateMachiene)stateMachine).Attack();
-                nextAttack = Time.time + attackRate;
-            }
-            if (((enemyStateMachiene)stateMachine).inRange == false)
-            {
-                nextAttack = Time.time + attackRate;
-                ((enemyStateMachiene)stateMachine).ChangeState(nameof(moveToPlayer));
-            }
-
+        if(canAttack)
+        {
+            ((enemyStateMachiene)stateMachine).Attack();
+            nextAttack = Time.time + attackRate;
+            canAttack = false;
+            ((enemyStateMachiene)stateMachine).ChangeState(nameof(moveToPlayer));
         }
     }
     
     public override void OnExit()
     {
         base.OnExit();
+        ((enemyStateMachiene)stateMachine).isAttacking = false;
     }
 }
 
