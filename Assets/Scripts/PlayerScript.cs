@@ -22,6 +22,8 @@ public class PlayerScript : MonoBehaviour
     public CameraMove moveCamera;
 
     Vector2 movement;
+
+    public GameObject deathScreen;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -66,6 +68,7 @@ public class PlayerScript : MonoBehaviour
     {
         if(hp == 0.0f)
         {
+            deathScreen.SetActive(true);
             Debug.Log("DIED");
         }
     }
