@@ -42,6 +42,13 @@ public class PlayerScript : MonoBehaviour
         }
 
         Die();
+
+        if(Input.GetKeyDown(KeyCode.R))
+     {
+        currentExp = currentExp+10;
+     }
+
+     LevelUp();
     }
 
      void FixedUpdate() 
@@ -64,13 +71,23 @@ public class PlayerScript : MonoBehaviour
        
     
 
-    void Die()
+    public void Die()
     {
         if(hp == 0.0f)
         {
             deathScreen.SetActive(true);
             Debug.Log("DIED");
             Time.timeScale = 0.0f;
+        }
+    }
+
+    public void LevelUp()
+    {
+        if(currentExp == (exp + 10 * lv))
+        {
+            lv = lv + 1;
+            currentExp = 0;
+            skillPoint = skillPoint + 1;
         }
     }
 }
