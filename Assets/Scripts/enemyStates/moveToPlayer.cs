@@ -46,9 +46,16 @@ public class moveToPlayer : SM_State
         {
             ((enemyStateMachiene)stateMachine).enemyGFX.localScale = new Vector3(1f, 1f,1f);
         }
+
+        if (((enemyStateMachiene)stateMachine).isWaiting == true)
+        {
+            ((enemyStateMachiene)stateMachine).ChangeState(nameof(waitinZone));
+        }
     }
     public override void OnExit()
     {
         base.OnExit();
     }
+
+    
 }

@@ -1,6 +1,7 @@
 using StateMachine;
 using UnityEngine;
 using Pathfinding;
+using System.Threading;
 public class enemyStateMachiene : SM_StateMachine
 {
     //states
@@ -22,6 +23,11 @@ public class enemyStateMachiene : SM_StateMachine
     public Rigidbody2D rb;
     public Seeker seeker;
 
+    public GameObject WaitingZone;
+    public GameObject AttackZone;
+    public bool isWaiting = false;
+    public timer timer;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -35,6 +41,10 @@ public class enemyStateMachiene : SM_StateMachine
     void Start()
     {
         ChangeState(nameof(moveToPlayer));
+        target = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        WaitingZone = GameObject.FindWithTag("WaitArea");
+        AttackZone = GameObject.FindWithTag("EnemyAttackArea");
+        timer = GetComponent<timer>();
     }
 
 
@@ -55,5 +65,9 @@ public class enemyStateMachiene : SM_StateMachine
             path = p;
             currentWaypoint = 0; 
         }
+    }
+    public void doneWaiting()
+    {
+        ChangeState(nameof(moveToPlayer));
     }
 }
