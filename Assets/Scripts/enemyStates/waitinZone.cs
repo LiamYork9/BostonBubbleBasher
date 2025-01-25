@@ -12,11 +12,15 @@ public class waitinZone : SM_State
     public override void UpdateState(float _dt)
     {
         base.UpdateState(_dt);
-        ((enemyStateMachiene)stateMachine).timer.StartTime();
+        if (((enemyStateMachiene)stateMachine).nextInQueue ==  true)
+        {
+            ((enemyStateMachiene)stateMachine).timer.StartTime();
+        }
     }
     public override void OnExit()
     {
         base.OnExit();
         ((enemyStateMachiene)stateMachine).timer.ResetTime();
+        ((enemyStateMachiene)stateMachine).isWaiting = false;
     }
 }

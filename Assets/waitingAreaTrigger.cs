@@ -16,19 +16,5 @@ public class waitingAreaTrigger : MonoBehaviour
     {
         
     }
-    void OnTriggerStay2D(Collider2D col)
-    {
-        if(col.tag == "Enemy")
-        {
-            col.GetComponent<enemyStateMachiene>().isWaiting = true;
-        }
-    }
-      void OnTriggerExit2D(Collider2D col)
-    {
-        if(col.tag == "Enemy")
-        {
-            col.GetComponent<enemyStateMachiene>().isWaiting = false;
-        }
-    }
 }
 
