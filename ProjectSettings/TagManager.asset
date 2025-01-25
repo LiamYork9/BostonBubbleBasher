@@ -6,6 +6,9 @@ TagManager:
   tags:
   - EnemyAttackArea
   - WaitArea
+  - TargetArea
+  - AreaTranstion1
+  - TargetArea2
   layers:
   - Default
   - TransparentFX

@@ -9,9 +9,8 @@ public class PlayerScript : MonoBehaviour
     public int currentExp = 0;
 
     public int skillPoint = 0;
+    
     public int hp = 10;
-
-
     public int moveSpeed = 5;
 
     public int attack = 5;
@@ -19,6 +18,8 @@ public class PlayerScript : MonoBehaviour
     public int defence = 1;
 
     public Rigidbody2D rb;
+
+    public CameraMove moveCamera;
 
     Vector2 movement;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -45,6 +46,21 @@ public class PlayerScript : MonoBehaviour
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    { 
+        if (other.gameObject.CompareTag("TargetArea")) 
+        {
+             moveCamera.begin = true;
+        }
+
+        if(other.gameObject.CompareTag("TargetArea2"))
+        {
+             moveCamera.begin2 = true;
+        }
+    }
+       
+    
 
     void Die()
     {
