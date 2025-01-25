@@ -371,10 +371,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 3731799914198492342, guid: a3070b46beee89e4e833fdfc79365f19, type: 3}
-      propertyPath: 'magicAttacks.Array.data[0]'
-      value: 
-      objectReference: {fileID: 3644223447907429234, guid: a3070b46beee89e4e833fdfc79365f19, type: 3}
     - target: {fileID: 6319848009294008447, guid: a3070b46beee89e4e833fdfc79365f19, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.57106537
