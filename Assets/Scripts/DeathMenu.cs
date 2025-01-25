@@ -21,7 +21,9 @@ public class DeathMenu : MonoBehaviour
 
     public void Retry()
     {
+        Time.timeScale = 1.0f;
         SceneManager.LoadScene(currentSceneName);
+        
     }
 
     public void MainMenu()
