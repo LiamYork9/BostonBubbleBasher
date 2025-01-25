@@ -27,6 +27,7 @@ public class enemyStateMachiene : SM_StateMachine
     public GameObject AttackZone;
     public bool isWaiting = false;
     public timer timer;
+    public int damage;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -69,5 +70,10 @@ public class enemyStateMachiene : SM_StateMachine
     public void doneWaiting()
     {
         ChangeState(nameof(moveToPlayer));
+    }
+
+    public void Attack(int _damage)
+    {
+        target.GetComponent<PlayerScript>().hp -= _damage;
     }
 }
