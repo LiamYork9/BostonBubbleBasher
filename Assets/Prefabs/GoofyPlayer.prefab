@@ -724,7 +724,7 @@ MonoBehaviour:
   meleeAttacks:
   - {fileID: 2440483079986555638, guid: 98dce88118aa23f4d9caa1a8e74ce6a2, type: 3}
   magicAttacks:
-  - {fileID: 3644223447907429234}
+  - {fileID: 2440483079986555638, guid: 98dce88118aa23f4d9caa1a8e74ce6a2, type: 3}
 --- !u!114 &-5148596786044167342
 MonoBehaviour:
   m_ObjectHideFlags: 0
