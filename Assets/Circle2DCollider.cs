@@ -18,6 +18,7 @@ public class Circle2DCollider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        enemyQueue.Clear();
        Area(); 
     }
 
