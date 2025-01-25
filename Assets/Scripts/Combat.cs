@@ -3,6 +3,7 @@ using UnityEngine;
 public class Combat : MonoBehaviour
 {
     public int i;
+    public int spellSpeed;
     public GameObject[] meleeAttacks;
     public GameObject[] magicAttacks;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -18,7 +19,9 @@ public class Combat : MonoBehaviour
     {
         if (magicAttacks[spellPrefab] != null)
         {
-            (Instantiate(magicAttacks[spellPrefab],transform.position+(new Vector3(1.0f,0.0f,0.0f)),transform.rotation)).GetComponent<Attack>().damage=damage;
+            GameObject temp = (Instantiate(magicAttacks[spellPrefab],transform.position+(new Vector3(1.0f,0.0f,0.0f)),transform.rotation));
+            temp.GetComponent<Attack>().damage=damage;
+            temp.GetComponent<MoveOverTime>().speed=spellSpeed* gameObject.GetComponent<PlayerScript>().facing;
         }
     }
     void Start()
