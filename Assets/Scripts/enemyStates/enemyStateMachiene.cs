@@ -28,6 +28,7 @@ public class enemyStateMachiene : SM_StateMachine
     public bool isWaiting = false;
     public timer timer;
     public int damage;
+    public bool inRange = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -41,7 +42,7 @@ public class enemyStateMachiene : SM_StateMachine
     }
     void Start()
     {
-        ChangeState(nameof(moveToPlayer));
+        ChangeState(nameof(attack));
         target = GameObject.FindWithTag("Player").GetComponent<Transform>();
         WaitingZone = GameObject.FindWithTag("WaitArea");
         AttackZone = GameObject.FindWithTag("EnemyAttackArea");
@@ -72,8 +73,18 @@ public class enemyStateMachiene : SM_StateMachine
         ChangeState(nameof(moveToPlayer));
     }
 
-    public void Attack(int _damage)
+    public void Attack()
     {
-        target.GetComponent<PlayerScript>().hp -= _damage;
+        target.GetComponent<PlayerScript>().hp -= damage;
+    }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+            {
+                inRange = true;
+            }
+        else{
+            inRange = false;
+        }
     }
 }
