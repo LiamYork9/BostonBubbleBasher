@@ -3,7 +3,7 @@ using UnityEngine;
 using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Search;
+//using UnityEditor.Search;
 
 public class enemyStateMachiene : SM_StateMachine
 {
@@ -127,7 +127,7 @@ public class enemyStateMachiene : SM_StateMachine
     {
         Debug.Log("Attacked");
         foreach(GameObject col in attackingList)
-            col.GetComponent<PlayerScript>().hp -= damage;
+            col.GetComponent<PlayerScript>().curretnHP -= damage;
     }
     public void AddToList()
     {
