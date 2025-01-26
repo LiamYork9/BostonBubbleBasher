@@ -1,8 +1,10 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class SkillTree : MonoBehaviour
 {
+    public PlayerScript player;
 
     public TextMeshProUGUI atkNumberText;
     public TextMeshProUGUI defNumberText;
@@ -15,10 +17,26 @@ public class SkillTree : MonoBehaviour
     public TextMeshProUGUI reactShieldText;
     public TextMeshProUGUI placeShieldText;
 
-    int atkCounter;
-    int defCounter;
-    int speedCounter;
-    int hpCounter;
+    public TextMeshProUGUI telepopText;
+    public TextMeshProUGUI soapText;
+
+    public TextMeshProUGUI healText;
+    public TextMeshProUGUI heal2Text;
+
+    public GameObject fireButton;
+    public GameObject poisonButt;
+    public GameObject reactShieldButt;
+    public GameObject placeShieldButt;
+    public GameObject telepopButt;
+    public GameObject soapButt;
+    public GameObject healButt;
+    public GameObject heal2Butt;
+
+    //Stats
+    int atkCounter = 5;
+    int defCounter = 1;
+    int speedCounter = 5;
+    int hpCounter = 10;
 
     int fireballChecker;
     int poisonChecker;
@@ -26,54 +44,189 @@ public class SkillTree : MonoBehaviour
     int reactShieldChecker;
     int placeShieldChecker;
 
-    int requireVal;
+    int telepopChecker;
+    int soapChecker;
+
+    int healChecker;
+    int heal2Checker;
+
+    //Skill Points
+    //public int requireVal = skillPoint;
 
     public void atkButonPressed()
     {
-        atkCounter++;
-        atkNumberText.text = "Atk" + atkCounter + "";
+        if (player.skillPoint >= 1)
+        {
+            atkCounter++;
+            atkNumberText.text = "Atk:" + atkCounter + "";
+            player.skillPoint--;
+        }
     }
 
     public void defButonPressed()
     {
-        defCounter++;
-        defNumberText.text = "Def" + defCounter + "";
+        if (player.skillPoint >= 1)
+        {
+            defCounter++;
+            defNumberText.text = "Def:" + defCounter + "";
+            player.skillPoint--;
+        }
     }
 
     public void speedButonPressed()
     {
-        speedCounter++;
-        speedNumberText.text = "Speed" + speedCounter + "";
+        if (player.skillPoint >= 1)
+        {
+            speedCounter++;
+            speedNumberText.text = "Speed:" + speedCounter + "";
+            player.skillPoint--;
+        }
     }
 
     public void hpButonPressed()
     {
-        hpCounter++;
-        hpNumberText.text = "HP" + hpCounter + "";
+        if (player.skillPoint >= 1)
+        {
+            hpCounter++;
+            hpNumberText.text = "HP:" + hpCounter + "";
+            player.skillPoint--;
+        }
     }
 
     public void fireballButtonPressed()
     {
-        fireballChecker++;
-        fireballText.color = Color.gray;
+        if (player.skillPoint >= 1)
+        {
+            fireballChecker++;
+            fireballText.color = Color.gray;
+            player.skillPoint--;
+            Button fireBallButton = fireButton.GetComponent<Button>();
+            fireBallButton.enabled = false;
+        }
     }
 
     public void poisonButtonPressed()
     {
-        poisonChecker++;
-        poisonText.color = Color.gray;
+        if (player.skillPoint >= 1)
+        {
+            poisonChecker++;
+            poisonText.color = Color.gray;
+            player.skillPoint--;
+            Button poisonButton = poisonButt.GetComponent<Button>();
+            poisonButton.enabled = false;
+        }
     }
 
     public void reactShieldButtonPressed()
     {
-        reactShieldChecker++;
-        reactShieldText.color = Color.gray;
+        if (player.skillPoint >= 1)
+        {
+            reactShieldChecker++;
+            reactShieldText.color = Color.gray;
+            player.skillPoint--;
+            Button reactShieldButton = reactShieldButt.GetComponent<Button>();
+            reactShieldButton.enabled = false;
+        }
     }
 
     public void placeShieldButtonPressed()
     {
-        placeShieldChecker++;
-        placeShieldText.color = Color.gray;
+        if (player.skillPoint >= 1)
+        {
+            placeShieldChecker++;
+            placeShieldText.color = Color.gray;
+            player.skillPoint--;
+            Button placeShieldButton = placeShieldButt.GetComponent<Button>();
+            placeShieldButton.enabled = false;
+        }
+    }
+
+    public void telepopButtonPressed()
+    {
+        if (player.skillPoint >= 1)
+        {
+            telepopChecker++;
+            telepopText.color = Color.gray;
+            player.skillPoint--;
+            Button telepopButton = telepopButt.GetComponent<Button>();
+            telepopButton.enabled = false;
+        }
+    }
+
+    public void soapButtonPressed()
+    {
+        if (player.skillPoint >= 1)
+        {
+            soapChecker++;
+            soapText.color = Color.gray;
+            player.skillPoint--;
+            Button soapButton = soapButt.GetComponent<Button>();
+            soapButton.enabled = false;
+        }
+    }
+
+    public void healButtonPressed()
+    {
+        if (player.skillPoint >= 1)
+        {
+            healChecker++;
+            healText.color = Color.gray;
+            player.skillPoint--;
+            Button healButton = healButt.GetComponent<Button>();
+            healButton.enabled = false;
+        }
+    }
+
+    public void heal2ButtonPressed()
+    {
+        if (player.skillPoint >= 1)
+        {
+            heal2Checker++;
+            heal2Text.color = Color.gray;
+            player.skillPoint--;
+            Button heal2Button = heal2Butt.GetComponent<Button>();
+            heal2Button.enabled = false;
+        }
+    }
+
+    public void atkUp()
+    {
+        player.attack=player.attack+1;
+    }
+
+    public void defUp()
+    {
+        player.defence=player.defence+1;
+    }
+
+    public void speedUp()
+    {
+        player.moveSpeed=player.moveSpeed+1;
+    }
+
+    public void hpUp()
+    {
+        player.hp=player.hp+1;
+    }
+
+    public void Update()
+    {
+        if (atkCounter > player.attack)
+        {
+        atkUp();
+        }
+        if (defCounter > player.defence)
+        {
+        defUp();
+        }
+        if (speedCounter > player.moveSpeed)
+        {
+        speedUp();
+        }
+        if (hpCounter > player.hp)
+        {
+        hpUp();
+        }
     }
 
 }

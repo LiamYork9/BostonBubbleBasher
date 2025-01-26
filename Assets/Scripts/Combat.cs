@@ -8,19 +8,28 @@ public class Combat : MonoBehaviour
     public GameObject[] magicAttacks;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    public void Attack(int attackPrefab, int damage)
+    public void Attack()
+    {
+        Attack(i);
+    }
+    public void Attack(int attackPrefab)
     {
         if (meleeAttacks[attackPrefab] != null)
         {
-            (Instantiate(meleeAttacks[attackPrefab],transform.position+(new Vector3(1.0f*gameObject.GetComponent<PlayerScript>().facing,0.0f,0.0f)),transform.rotation)).GetComponent<Attack>().damage=damage;
+            (Instantiate(meleeAttacks[attackPrefab],transform.position+(new Vector3(1.0f*gameObject.GetComponent<PlayerScript>().facing,0.0f,0.0f)),transform.rotation)).GetComponent<Attack>().damage=gameObject.GetComponent<PlayerScript>().attack;
         }
     }
-    public void Cast(int spellPrefab, int damage)
+
+    public void Cast()
+    {
+        Cast(i);
+    }
+    public void Cast(int spellPrefab)
     {
         if (magicAttacks[spellPrefab] != null)
         {
             GameObject temp = (Instantiate(magicAttacks[spellPrefab],transform.position+(new Vector3(1.0f*gameObject.GetComponent<PlayerScript>().facing,0.0f,0.0f)),transform.rotation));
-            temp.GetComponent<Attack>().damage=damage;
+            temp.GetComponent<Attack>().damage=gameObject.GetComponent<PlayerScript>().attack;
             temp.GetComponent<MoveOverTime>().speed=spellSpeed* gameObject.GetComponent<PlayerScript>().facing;
         }
     }
@@ -34,11 +43,11 @@ public class Combat : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Attack(i,gameObject.GetComponent<PlayerScript>().attack);
+            gameObject.GetComponent<Animator>().SetTrigger("Melee");
         }
         else if(Input.GetKeyDown(KeyCode.Mouse1))
         {
-            Cast(i,gameObject.GetComponent<PlayerScript>().attack);
+            gameObject.GetComponent<Animator>().SetTrigger("Range");
         }
     }
 }
