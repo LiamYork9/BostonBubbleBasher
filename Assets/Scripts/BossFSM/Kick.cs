@@ -7,20 +7,18 @@ public class Kick : SM_State
     public override void OnStart()
     {
         base.OnStart();
-        ((BIGMANStateMachine)stateMachine).curPoint = ((BIGMANStateMachine)stateMachine).player.transform;
-        ((BIGMANStateMachine)stateMachine).speed = ((BIGMANStateMachine)stateMachine).speed * 2;
     }
     public override void UpdateState(float _dt)
     {
         base.UpdateState(_dt);
-        if (Vector2.Distance(((BIGMANStateMachine)stateMachine).transform.position, ((BIGMANStateMachine)stateMachine).curPoint.position) < 3f)
-        {
-            ((BIGMANStateMachine)stateMachine).kickHB.active = true;
-        }
+        ((BIGMANStateMachine)stateMachine).mKick();
 
     }
     public override void OnExit()
     {
         base.OnExit();
+        ((BIGMANStateMachine)stateMachine).kickHB.SetActive(false);
+        ((BIGMANStateMachine)stateMachine).ranKick += 1; 
+        ((BIGMANStateMachine)stateMachine).curPoint = ((BIGMANStateMachine)stateMachine).points[0];
     }
 }

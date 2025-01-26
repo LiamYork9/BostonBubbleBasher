@@ -312,13 +312,14 @@ GameObject:
   - component: {fileID: 448184353}
   - component: {fileID: 448184355}
   - component: {fileID: 448184354}
+  - component: {fileID: 448184356}
   m_Layer: 0
   m_Name: KickZone
   m_TagString: KickZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &448184353
 Transform:
   m_ObjectHideFlags: 0
@@ -423,7 +424,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -435,6 +436,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &448184356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448184352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a151504161bca8e4b8f09b171d97738c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &645638385
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,6 +711,8 @@ GameObject:
   m_Component:
   - component: {fileID: 905028554}
   - component: {fileID: 905028553}
+  - component: {fileID: 905028555}
+  - component: {fileID: 905028556}
   m_Layer: 0
   m_Name: Bullets
   m_TagString: Untagged
@@ -775,6 +790,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1214085580}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &905028555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905028552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9196288ad20e9684b8097875b2f20f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &905028556
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905028552}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &984247983
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,7 +863,7 @@ GameObject:
   - component: {fileID: 984247988}
   m_Layer: 0
   m_Name: BigMan
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -905,8 +978,10 @@ MonoBehaviour:
   - {fileID: 789722562}
   curPoint: {fileID: 1551928261}
   speed: 5
+  kickDmg: 5
+  bulletDmg: 2
   player: {fileID: 0}
-  kickHB: {fileID: 0}
+  kickHB: {fileID: 448184352}
   rb: {fileID: 0}
   moveCounter: 0
   kickChance: 10
@@ -914,7 +989,7 @@ MonoBehaviour:
   ranKick: 0
   randPoint: 0
   Bullets: {fileID: 905028552}
-  timer: {fileID: 0}
+  timer: {fileID: 984247988}
 --- !u!50 &984247987
 Rigidbody2D:
   serializedVersion: 5
@@ -1034,7 +1109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6819233813233282278, guid: 97774f45438c9364fa4a4bbf8c745494, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8385461794487682226, guid: 97774f45438c9364fa4a4bbf8c745494, type: 3}
       propertyPath: areaRange

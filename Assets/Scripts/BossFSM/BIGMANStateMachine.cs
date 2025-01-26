@@ -13,6 +13,8 @@ public class BIGMANStateMachine : SM_StateMachine
     public Transform[] points;
     public Transform curPoint;
     public float speed;
+    public int kickDmg;
+    public int bulletDmg;
     public GameObject player;
     public GameObject kickHB;
     public Rigidbody2D rb;
@@ -37,7 +39,6 @@ public class BIGMANStateMachine : SM_StateMachine
     void Start()
     {
         player = GameObject.FindWithTag("Player");
-        kickHB = GameObject.FindWithTag("KickZone");
         rb = GetComponent<Rigidbody2D>();
         timer = GetComponent<timer>();
         kickNum = Random.Range(1, kickChance);
@@ -47,7 +48,6 @@ public class BIGMANStateMachine : SM_StateMachine
     // Update is called once per frame
     void Update()
     {
-
     }
 
     public void Shoot(Transform _point)
@@ -72,11 +72,16 @@ public class BIGMANStateMachine : SM_StateMachine
         }
         
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    public void mKick()
     {
-        if(collision.tag == "player")
+        curPoint = player.transform;
+        kickHB.SetActive(true);
+        transform.position = Vector2.MoveTowards(transform.position, curPoint.position, speed * Time.deltaTime);
+        if (Vector2.Distance(transform.position, curPoint.position) < 1f)
         {
-            //player.GetComponent<PlayerScript>()
+            ChangeState(nameof(RandomAttack));
         }
     }
+    
 }

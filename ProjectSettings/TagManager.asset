@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - BossPoints
   - KickZone
+  - Boss
   layers:
   - Default
   - TransparentFX
