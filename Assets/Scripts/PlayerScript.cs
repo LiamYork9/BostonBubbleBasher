@@ -69,6 +69,15 @@ public class PlayerScript : MonoBehaviour
         {
             facing = 1;
         }
+
+        if(movement.x>0.2f||movement.x<-0.2f||movement.y>0.2f||movement.y<-0.2f)
+        {
+            gameObject.GetComponent<Animator>().SetBool("Moving", true);
+        }
+        else
+        {
+            gameObject.GetComponent<Animator>().SetBool("Moving", false);
+        }
         
         Die();
 
