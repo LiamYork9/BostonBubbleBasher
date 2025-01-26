@@ -6,6 +6,8 @@ public class SkillTree : MonoBehaviour
 {
     public PlayerScript player;
 
+    public Spells spells;
+
     public TextMeshProUGUI atkNumberText;
     public TextMeshProUGUI defNumberText;
     public TextMeshProUGUI speedNumberText;
@@ -38,17 +40,17 @@ public class SkillTree : MonoBehaviour
     int speedCounter = 5;
     int hpCounter = 10;
 
-    int fireballChecker;
-    int poisonChecker;
+    int fireballChecker = 0;
+    int poisonChecker = 0;
 
-    int reactShieldChecker;
-    int placeShieldChecker;
+    int reactShieldChecker = 0;
+    int placeShieldChecker = 0;
 
-    int telepopChecker;
-    int soapChecker;
+    int telepopChecker = 0;
+    int soapChecker = 0;
 
-    int healChecker;
-    int heal2Checker;
+    int healChecker = 0;
+    int heal2Checker = 0;
 
     //Skill Points
     //public int requireVal = skillPoint;
@@ -98,6 +100,7 @@ public class SkillTree : MonoBehaviour
         if (player.skillPoint >= 1)
         {
             fireballChecker++;
+            spells.UnlockFireball();
             fireballText.color = Color.gray;
             player.skillPoint--;
             Button fireBallButton = fireButton.GetComponent<Button>();
@@ -110,6 +113,7 @@ public class SkillTree : MonoBehaviour
         if (player.skillPoint >= 1)
         {
             poisonChecker++;
+            spells.UnlockPoison();
             poisonText.color = Color.gray;
             player.skillPoint--;
             Button poisonButton = poisonButt.GetComponent<Button>();

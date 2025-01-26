@@ -1,16 +1,18 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Combat : MonoBehaviour
 {
-    public int i;
+    public int attackIndex;
     public int spellSpeed;
-    public GameObject[] meleeAttacks;
-    public GameObject[] magicAttacks;
+    public List<GameObject> meleeAttacks;
+    public List<GameObject> magicAttacks;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     public void Attack()
     {
-        Attack(i);
+        Attack(attackIndex);
     }
     public void Attack(int attackPrefab)
     {
@@ -22,7 +24,7 @@ public class Combat : MonoBehaviour
 
     public void Cast()
     {
-        Cast(i);
+        Cast(attackIndex);
     }
     public void Cast(int spellPrefab)
     {
@@ -49,5 +51,29 @@ public class Combat : MonoBehaviour
         {
             gameObject.GetComponent<Animator>().SetTrigger("Range");
         }
+        if(Input.mouseScrollDelta.y>0)
+        {
+            if(attackIndex+1==meleeAttacks.Count)
+            {
+                attackIndex = 0;
+            }
+            else
+            {
+                attackIndex++;
+            }
+        }
+        else if(Input.mouseScrollDelta.y<0)
+        {
+            if(attackIndex==0)
+            {
+                attackIndex=(meleeAttacks.Count)-1;
+            }
+            else
+            {
+                attackIndex--;
+            }
+        }
     }
+
+
 }
