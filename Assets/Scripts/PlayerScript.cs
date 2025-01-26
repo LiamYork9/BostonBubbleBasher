@@ -18,12 +18,12 @@ public class PlayerScript : MonoBehaviour
     
     public int hp = 10;
 
-    public int curretnHP;
+    public int currentHP;
     public int moveSpeed = 5;
 
     public int attack = 5;
 
-    public int defence = 1;
+    public int defense = 1;
 
     public Rigidbody2D rb;
 
@@ -45,7 +45,7 @@ public class PlayerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        curretnHP = hp;
+        currentHP = hp;
         Time.timeScale = 1.0f;
     }
 
@@ -104,7 +104,7 @@ public class PlayerScript : MonoBehaviour
      LevelUp();
         lvText.text = "LV: " + lv;
         spText.text = "Skill Points: " + skillPoint;
-        healthText.text = "HP: " + curretnHP;
+        healthText.text = "HP: " + currentHP;
     }
 
      void FixedUpdate() 
@@ -129,7 +129,7 @@ public class PlayerScript : MonoBehaviour
 
     public void Die()
     {
-        if(curretnHP == 0.0f)
+        if(currentHP == 0.0f)
         {
             deathScreen.SetActive(true);
             Debug.Log("DIED");

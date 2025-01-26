@@ -197,23 +197,22 @@ public class SkillTree : MonoBehaviour
 
     public void atkUp()
     {
-        player.attack=player.attack+1;
+        GameManager.Instance.UpdateAttack(GameManager.Instance.attack+1);
     }
 
     public void defUp()
     {
-        player.defence=player.defence+1;
+        GameManager.Instance.UpdateDefense(GameManager.Instance.defense+1);
     }
 
     public void speedUp()
     {
-        player.moveSpeed=player.moveSpeed+1;
+        GameManager.Instance.UpdateSpeed(GameManager.Instance.moveSpeed+1);
     }
 
     public void hpUp()
     {
-        player.hp=player.hp+1;
-        player.curretnHP = player.curretnHP+1;
+        GameManager.Instance.UpdateMaxHP(GameManager.Instance.maxhp+1);
     }
 
     public void Update()
@@ -222,7 +221,7 @@ public class SkillTree : MonoBehaviour
         {
         atkUp();
         }
-        if (defCounter > player.defence)
+        if (defCounter > player.defense)
         {
         defUp();
         }
