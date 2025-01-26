@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2440918126880683600}
   - component: {fileID: 452250693446091500}
   - component: {fileID: -552477370815317415}
+  - component: {fileID: 1987511931025228845}
   m_Layer: 0
   m_Name: FireBallAttack 1
   m_TagString: Untagged
@@ -105,6 +106,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  hitTarget:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1987511931025228845}
+        m_TargetAssemblyTypeName: Fireball, Assembly-CSharp
+        m_MethodName: FireballDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!58 &-696755987319576935
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -279,3 +295,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1987511931025228845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2440483079986555638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 069acabaf1735ed48932a5cd577566fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
