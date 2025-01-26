@@ -310,6 +310,7 @@ GameObject:
   - component: {fileID: 9160047837326069256}
   - component: {fileID: 1759865843245016221}
   - component: {fileID: 97252303348501465}
+  - component: {fileID: 9021964683647925999}
   m_Layer: 0
   m_Name: BigMan
   m_TagString: Boss
@@ -484,6 +485,19 @@ MonoBehaviour:
   timeLeft: 0
   timeSet: 3
   hasTime: 0
+--- !u!114 &9021964683647925999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8836584710949375957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc0ccf88cd7da1468e1b148e9a7fb80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
 --- !u!1 &9032652191696833608
 GameObject:
   m_ObjectHideFlags: 0
