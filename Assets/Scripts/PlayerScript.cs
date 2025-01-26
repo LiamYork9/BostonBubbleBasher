@@ -55,7 +55,7 @@ public class PlayerScript : MonoBehaviour
 
         
 
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space")&&shieldUnlocked)
         {
             GameObject temp = (Instantiate(GameManager.Instance.bubbleShield,transform.position,transform.rotation));
             temp.transform.parent = GameManager.Instance.player.transform;

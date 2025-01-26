@@ -126,10 +126,12 @@ public class SkillTree : MonoBehaviour
         if (player.skillPoint >= 1)
         {
             reactShieldChecker++;
+            spells.UnlockReactiveShield();
             reactShieldText.color = Color.gray;
             player.skillPoint--;
             Button reactShieldButton = reactShieldButt.GetComponent<Button>();
             reactShieldButton.enabled = false;
+
         }
     }
 

@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     public void UnlockShield()
     {
         shieldUnlocked = true;
+        player.GetComponent<PlayerScript>().shieldUnlocked = shieldUnlocked;
     }
 
     void Start()
@@ -34,6 +35,8 @@ public class GameManager : MonoBehaviour
         player.GetComponent<PlayerScript>().lvText = lvText;
         player.GetComponent<PlayerScript>().spText = spText;
         player.GetComponent<PlayerScript>().healthText = healthText;
+        player.GetComponent<PlayerScript>().shieldUnlocked = shieldUnlocked;
+
     }
 
     public void UnlockAttacks(GameObject melee, GameObject range)
