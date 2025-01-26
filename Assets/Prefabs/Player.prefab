@@ -813,7 +813,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1958676783162264248, guid: 5da03b235222d3446a96d0eaa14dfcba, type: 3}
+  m_Sprite: {fileID: -3675728329477958583, guid: 056a71799a050724bb59a998584990cb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1392,7 +1392,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc40af756eb977e42900d57a9fe6fafb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameIsPaused: 0
   pauseMenuUI: {fileID: 1497560180604406425}
+  uiToggle: {fileID: 0}
 --- !u!1 &4117321841638916264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,7 +1818,7 @@ GameObject:
   - component: {fileID: 5082659170782493607}
   - component: {fileID: 119570399954319802}
   - component: {fileID: 7504793202174894943}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1943,6 +1945,7 @@ MonoBehaviour:
   currentExp: 0
   skillPoint: 0
   hp: 10
+  curretnHP: 0
   moveSpeed: 5
   attack: 5
   defence: 1
@@ -1950,6 +1953,7 @@ MonoBehaviour:
   moveCamera: {fileID: 0}
   lvText: {fileID: 0}
   spText: {fileID: 0}
+  healthText: {fileID: 0}
   deathScreen: {fileID: 3502048743722885915}
 --- !u!61 &5082659170782493607
 BoxCollider2D:
