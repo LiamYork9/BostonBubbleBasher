@@ -35,6 +35,8 @@ public class PlayerScript : MonoBehaviour
 
     public Text healthText;
 
+    public bool shieldUnlocked;
+
     Vector2 movement;
 
     public GameObject deathScreen;
@@ -57,7 +59,7 @@ public class PlayerScript : MonoBehaviour
 
         if (Input.GetKeyDown("space"))
         {
-            hp -= 5;
+            GameObject temp = (Instantiate(GameManager.Instance.bubbleShield,transform.position,transform.rotation));
         }
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
