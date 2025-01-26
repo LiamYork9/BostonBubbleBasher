@@ -7,7 +7,6 @@ public class BIGMANStateMachine : SM_StateMachine
 {
     //States
     public RandomAttack random;
-    public ConsecutiveShooting conShooting;
     public Kick kick;
 
     //var
@@ -15,7 +14,7 @@ public class BIGMANStateMachine : SM_StateMachine
     public Transform curPoint;
     public float speed;
     public GameObject player;
-    public GameObject gun;
+    public GameObject kickHB;
     public Rigidbody2D rb;
     public int moveCounter;
     public int kickChance;
@@ -29,7 +28,6 @@ public class BIGMANStateMachine : SM_StateMachine
     private void Awake()
     {
         states.Add(random);
-        states.Add(conShooting);
         states.Add(kick);
 
         foreach (SM_State s in states)
@@ -39,7 +37,7 @@ public class BIGMANStateMachine : SM_StateMachine
     void Start()
     {
         player = GameObject.FindWithTag("Player");
-        gun = GameObject.FindWithTag("BossGun");
+        kickHB = GameObject.FindWithTag("KickZone");
         rb = GetComponent<Rigidbody2D>();
         timer = GetComponent<timer>();
         kickNum = Random.Range(1, kickChance);
@@ -73,5 +71,12 @@ public class BIGMANStateMachine : SM_StateMachine
             return;
         }
         
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "player")
+        {
+            //player.GetComponent<PlayerScript>()
+        }
     }
 }
