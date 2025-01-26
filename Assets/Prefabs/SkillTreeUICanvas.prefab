@@ -4497,6 +4497,7 @@ GameObject:
   - component: {fileID: 1484314182507539334}
   - component: {fileID: 3144753012749061232}
   - component: {fileID: 5316269780350967319}
+  - component: {fileID: 3305759965647988038}
   m_Layer: 5
   m_Name: SkillTreeUICanvas
   m_TagString: Untagged
@@ -4623,6 +4624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  spells: {fileID: 3305759965647988038}
   atkNumberText: {fileID: 8674459666446578647}
   defNumberText: {fileID: 222032759885417247}
   speedNumberText: {fileID: 936032921314818340}
@@ -4643,6 +4645,25 @@ MonoBehaviour:
   soapButt: {fileID: 4812304437672516272}
   healButt: {fileID: 6202417305066618860}
   heal2Butt: {fileID: 6254653361775722067}
+--- !u!114 &3305759965647988038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7898366354468365767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f42d27abd5e494f9c1a4d583fb2b4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireballPrefabs:
+  - {fileID: 2440483079986555638, guid: 4e09f31bd61bb0c41891d13ed1dc2a44, type: 3}
+  - {fileID: 8154028379355666471, guid: 80ae4310d00bfd344a26cafb400dc11c, type: 3}
+  poisonPrefabs:
+  - {fileID: 2440483079986555638, guid: 343421c763b858242869776354aaf7ea, type: 3}
+  - {fileID: 2440483079986555638, guid: 3d714d72d9bdf564bbb3ce966deccb83, type: 3}
+  player: {fileID: 0}
 --- !u!1 &8331884470227442814
 GameObject:
   m_ObjectHideFlags: 0
