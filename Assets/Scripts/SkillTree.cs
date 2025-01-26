@@ -234,4 +234,9 @@ public class SkillTree : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        player = GameManager.Instance.player.GetComponent<PlayerScript>();
+    }
+
 }
