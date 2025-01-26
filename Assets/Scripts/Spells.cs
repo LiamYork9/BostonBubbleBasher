@@ -20,6 +20,11 @@ public class Spells : MonoBehaviour
         GameManager.Instance.UnlockAttacks(poisonPrefabs[0],poisonPrefabs[1]);
     }
 
+    public void UnlockReactiveShield()
+    {
+        GameManager.Instance.UnlockShield();
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
