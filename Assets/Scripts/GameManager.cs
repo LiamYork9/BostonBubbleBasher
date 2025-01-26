@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class GameManager : MonoBehaviour
@@ -9,6 +10,20 @@ public class GameManager : MonoBehaviour
     public List<GameObject> meleeHitboxes;
     public List<GameObject> rangeHitboxes; 
 
+    public Text lvText;
+
+    public Text spText;
+
+    public Text healthText;
+
+    public GameObject bubbleShield;
+    public bool shieldUnlocked;
+
+    public void UnlockShield()
+    {
+        shieldUnlocked = true;
+    }
+
     void Start()
     {
         player = GameObject.FindWithTag("Player");
@@ -16,6 +31,9 @@ public class GameManager : MonoBehaviour
         player.GetComponentInChildren<pausemenu>().uiToggle = gameObject.GetComponentInChildren<UIToggle>();
         player.GetComponent<Combat>().meleeAttacks = meleeHitboxes;
         player.GetComponent<Combat>().magicAttacks = rangeHitboxes;
+        player.GetComponent<PlayerScript>().lvText = lvText;
+        player.GetComponent<PlayerScript>().spText = spText;
+        player.GetComponent<PlayerScript>().healthText = healthText;
     }
 
     public void UnlockAttacks(GameObject melee, GameObject range)
