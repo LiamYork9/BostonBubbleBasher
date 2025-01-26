@@ -55,4 +55,12 @@ public class pausemenu : MonoBehaviour
         Debug.Log("Sucks at the game");
         Application.Quit();
     }
+    public void credits()
+    {
+        pauseMenuUI.SetActive(true);
+    }
+    public void exitCredits()
+    {
+        pauseMenuUI.SetActive(false);
+    }
 }
