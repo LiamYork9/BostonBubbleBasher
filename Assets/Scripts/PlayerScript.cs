@@ -123,7 +123,7 @@ public class PlayerScript : MonoBehaviour
 
     public void Die()
     {
-        if(hp == 0.0f)
+        if(curretnHP == 0.0f)
         {
             deathScreen.SetActive(true);
             Debug.Log("DIED");
