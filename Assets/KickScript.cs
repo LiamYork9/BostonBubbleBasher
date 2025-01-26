@@ -15,7 +15,7 @@ public class KickScript : MonoBehaviour
         if (collision.tag == "Player")
         {
             Debug.Log("Kicked");
-            player.GetComponent<PlayerScript>().curretnHP -= boss.GetComponent<BIGMANStateMachine>().kickDmg;
+            player.GetComponent<PlayerScript>().currentHP -= boss.GetComponent<BIGMANStateMachine>().kickDmg;
         }
     }
 }
