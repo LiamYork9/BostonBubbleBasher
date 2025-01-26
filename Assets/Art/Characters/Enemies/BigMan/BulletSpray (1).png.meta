@@ -1,0 +1,1104 @@
+fileFormatVersion: 2
+guid: cacfe8202fb4289469ba7e8c749b3c68
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1911253617989819804
+    second: BulletSpray (1)_0
+  - first:
+      213: 8836452138010513986
+    second: BulletSpray (1)_1
+  - first:
+      213: 4170193437128153195
+    second: BulletSpray (1)_2
+  - first:
+      213: 5475625343113420658
+    second: BulletSpray (1)_3
+  - first:
+      213: 3853095058962649353
+    second: BulletSpray (1)_4
+  - first:
+      213: -4726726562054296747
+    second: BulletSpray (1)_5
+  - first:
+      213: -2104266473374713442
+    second: BulletSpray (1)_6
+  - first:
+      213: 4113975419664733782
+    second: BulletSpray (1)_7
+  - first:
+      213: 1332365942456722735
+    second: BulletSpray (1)_8
+  - first:
+      213: 559992863422565778
+    second: BulletSpray (1)_9
+  - first:
+      213: -8931541874267954487
+    second: BulletSpray (1)_10
+  - first:
+      213: -5323495069055946446
+    second: BulletSpray (1)_11
+  - first:
+      213: -169382500020319745
+    second: BulletSpray (1)_12
+  - first:
+      213: -3069748172439148406
+    second: BulletSpray (1)_13
+  - first:
+      213: -7945465080965395057
+    second: BulletSpray (1)_14
+  - first:
+      213: -3585109064306103450
+    second: BulletSpray (1)_15
+  - first:
+      213: 3047527959972855307
+    second: BulletSpray (1)_16
+  - first:
+      213: -3359820974535099336
+    second: BulletSpray (1)_17
+  - first:
+      213: -1466037087678131491
+    second: BulletSpray (1)_18
+  - first:
+      213: -8696126638228149076
+    second: BulletSpray (1)_19
+  - first:
+      213: -7403408990751885106
+    second: BulletSpray (1)_20
+  - first:
+      213: 2137602506545108431
+    second: BulletSpray (1)_21
+  - first:
+      213: -3873416304392892247
+    second: BulletSpray (1)_22
+  - first:
+      213: 9203916735713822105
+    second: BulletSpray (1)_23
+  - first:
+      213: -227090902606692927
+    second: BulletSpray (1)_24
+  - first:
+      213: -5909522189028683892
+    second: BulletSpray (1)_25
+  - first:
+      213: 7768934473770652566
+    second: BulletSpray (1)_26
+  - first:
+      213: -2053490400096153655
+    second: BulletSpray (1)_27
+  - first:
+      213: 5110146263662205037
+    second: BulletSpray (1)_28
+  - first:
+      213: -8763835333754141842
+    second: BulletSpray (1)_29
+  - first:
+      213: -8594373493010354600
+    second: BulletSpray (1)_30
+  - first:
+      213: 7551814542841654952
+    second: BulletSpray (1)_31
+  - first:
+      213: -7104620223102318722
+    second: BulletSpray (1)_32
+  - first:
+      213: 6956575689509342454
+    second: BulletSpray (1)_33
+  - first:
+      213: 1317755483986197030
+    second: BulletSpray (1)_34
+  - first:
+      213: -3259963966754543347
+    second: BulletSpray (1)_35
+  - first:
+      213: -8769317400027513919
+    second: BulletSpray (1)_36
+  - first:
+      213: 5285709752147010670
+    second: BulletSpray (1)_37
+  - first:
+      213: 4430048479034285389
+    second: BulletSpray (1)_38
+  - first:
+      213: 8065447287131417968
+    second: BulletSpray (1)_39
+  - first:
+      213: -4694523755492701430
+    second: BulletSpray (1)_40
+  - first:
+      213: -8460612641309769497
+    second: BulletSpray (1)_41
+  - first:
+      213: -4079729264612835108
+    second: BulletSpray (1)_42
+  - first:
+      213: -1470280646036078374
+    second: BulletSpray (1)_43
+  - first:
+      213: 7896897426139962646
+    second: BulletSpray (1)_44
+  - first:
+      213: 2514710817116484733
+    second: BulletSpray (1)_45
+  - first:
+      213: -8823489093684326349
+    second: BulletSpray (1)_46
+  - first:
+      213: -5292261401496030188
+    second: BulletSpray (1)_47
+  - first:
+      213: -225047138808907180
+    second: BulletSpray (1)_48
+  - first:
+      213: -2928511892207999136
+    second: BulletSpray (1)_49
+  - first:
+      213: -6695014535511427414
+    second: BulletSpray (1)_50
+  - first:
+      213: -7726112342584071668
+    second: BulletSpray (1)_51
+  - first:
+      213: 2534823610877000090
+    second: BulletSpray (1)_52
+  - first:
+      213: 4127298769433947235
+    second: BulletSpray (1)_53
+  - first:
+      213: -192922142010009725
+    second: BulletSpray (1)_54
+  - first:
+      213: 7332439495713522830
+    second: BulletSpray (1)_55
+  - first:
+      213: -2123820090890071616
+    second: BulletSpray (1)_56
+  - first:
+      213: 8081286773665148998
+    second: BulletSpray (1)_57
+  - first:
+      213: 7279314211706600251
+    second: BulletSpray (1)_58
+  - first:
+      213: -5842894227176612823
+    second: BulletSpray (1)_59
+  - first:
+      213: -2116987130797158333
+    second: BulletSpray (1)_60
+  - first:
+      213: 47810523066099581
+    second: BulletSpray (1)_61
+  - first:
+      213: 7110996671200873901
+    second: BulletSpray (1)_62
+  - first:
+      213: -1849163671371447524
+    second: BulletSpray (1)_63
+  - first:
+      213: -5293126195946277341
+    second: BulletSpray (1)_64
+  - first:
+      213: 1121456642752546733
+    second: BulletSpray (1)_65
+  - first:
+      213: -2210300454484711517
+    second: BulletSpray (1)_66
+  - first:
+      213: 2607285051034513683
+    second: BulletSpray (1)_67
+  - first:
+      213: 7727398548088680655
+    second: BulletSpray (1)_68
+  - first:
+      213: 13402208169404672
+    second: BulletSpray (1)_69
+  - first:
+      213: -2469487924374832620
+    second: BulletSpray (1)_70
+  - first:
+      213: 7193748327494252312
+    second: BulletSpray (1)_71
+  - first:
+      213: -4442963954887434618
+    second: BulletSpray (1)_72
+  - first:
+      213: -4514972197693310264
+    second: BulletSpray (1)_73
+  - first:
+      213: -310556154620810083
+    second: BulletSpray (1)_74
+  - first:
+      213: 580964262222771622
+    second: BulletSpray (1)_75
+  - first:
+      213: -2385567248555431477
+    second: BulletSpray (1)_76
+  - first:
+      213: -5202365302232506188
+    second: BulletSpray (1)_77
+  - first:
+      213: 8516008823988832206
+    second: BulletSpray (1)_78
+  - first:
+      213: -5445598536354232181
+    second: BulletSpray (1)_79
+  - first:
+      213: 8176069670807758534
+    second: BulletSpray (1)_80
+  - first:
+      213: 6141542839924947264
+    second: BulletSpray (1)_81
+  - first:
+      213: 3055550217303282040
+    second: BulletSpray (1)_82
+  - first:
+      213: -4822946597405504074
+    second: BulletSpray (1)_83
+  - first:
+      213: -8594756095273292843
+    second: BulletSpray (1)_84
+  - first:
+      213: -4250959868866882799
+    second: BulletSpray (1)_85
+  - first:
+      213: 9117534235897877915
+    second: BulletSpray (1)_86
+  - first:
+      213: 1390862645074449220
+    second: BulletSpray (1)_87
+  - first:
+      213: 6717894053690025254
+    second: BulletSpray (1)_88
+  - first:
+      213: -7046803685454995049
+    second: BulletSpray (1)_89
+  - first:
+      213: 5031945804245186865
+    second: BulletSpray (1)_90
+  - first:
+      213: 5125667111515749800
+    second: BulletSpray (1)_91
+  - first:
+      213: 2695586065838940740
+    second: BulletSpray (1)_92
+  - first:
+      213: -6316322300232328473
+    second: BulletSpray (1)_93
+  - first:
+      213: 23123359213528544
+    second: BulletSpray (1)_94
+  - first:
+      213: 4185105880019946123
+    second: BulletSpray (1)_95
+  - first:
+      213: -2408386512935718257
+    second: BulletSpray (1)_96
+  - first:
+      213: 8812417615341503242
+    second: BulletSpray (1)_97
+  - first:
+      213: -1272839562983810487
+    second: BulletSpray (1)_98
+  - first:
+      213: -840809425516597345
+    second: BulletSpray (1)_99
+  - first:
+      213: -2168447280112780126
+    second: BulletSpray (1)_100
+  - first:
+      213: -206608510017274304
+    second: BulletSpray (1)_101
+  - first:
+      213: 969308518997622462
+    second: BulletSpray (1)_102
+  - first:
+      213: -7014087949118707421
+    second: BulletSpray (1)_103
+  - first:
+      213: 7703670014922542133
+    second: BulletSpray (1)_104
+  - first:
+      213: -1073008481377153500
+    second: BulletSpray (1)_105
+  - first:
+      213: 6879241786946174393
+    second: BulletSpray (1)_106
+  - first:
+      213: 3910460184482345296
+    second: BulletSpray (1)_107
+  - first:
+      213: 8937175324767915514
+    second: BulletSpray (1)_108
+  - first:
+      213: -3087221905062587403
+    second: BulletSpray (1)_109
+  - first:
+      213: -2093689667648428933
+    second: BulletSpray (1)_110
+  - first:
+      213: -5502449720393196606
+    second: BulletSpray (1)_111
+  - first:
+      213: -2738991248754122811
+    second: BulletSpray (1)_112
+  - first:
+      213: -6320095777306351699
+    second: BulletSpray (1)_113
+  - first:
+      213: -5802950853753728866
+    second: BulletSpray (1)_114
+  - first:
+      213: -1923147782275130293
+    second: BulletSpray (1)_115
+  - first:
+      213: 5572837642734708687
+    second: BulletSpray (1)_116
+  - first:
+      213: 6006206187207673575
+    second: BulletSpray (1)_117
+  - first:
+      213: -1286340180286671872
+    second: BulletSpray (1)_118
+  - first:
+      213: -4725422125919639839
+    second: BulletSpray (1)_119
+  - first:
+      213: -8259153679879268752
+    second: BulletSpray (1)_120
+  - first:
+      213: -4509357713331396746
+    second: BulletSpray (1)_121
+  - first:
+      213: -4729042330958381898
+    second: BulletSpray (1)_122
+  - first:
+      213: -783328005575230353
+    second: BulletSpray (1)_123
+  - first:
+      213: 3845982401731421744
+    second: BulletSpray (1)_124
+  - first:
+      213: 3218449648842365451
+    second: BulletSpray (1)_125
+  - first:
+      213: 5090781120053859559
+    second: BulletSpray (1)_126
+  - first:
+      213: 5903525820610028676
+    second: BulletSpray (1)_127
+  - first:
+      213: 6046122395459311304
+    second: BulletSpray (1)_128
+  - first:
+      213: 5269784766968917720
+    second: BulletSpray (1)_129
+  - first:
+      213: -7065566273297929728
+    second: BulletSpray (1)_130
+  - first:
+      213: 8613191720167048832
+    second: BulletSpray (1)_131
+  - first:
+      213: -4367965572701320268
+    second: BulletSpray (1)_132
+  - first:
+      213: -1318141541267207967
+    second: BulletSpray (1)_133
+  - first:
+      213: -8741327342914901508
+    second: BulletSpray (1)_134
+  - first:
+      213: -5535201688527365114
+    second: BulletSpray (1)_135
+  - first:
+      213: -6361367472242649865
+    second: BulletSpray (1)_136
+  - first:
+      213: -9187122528038549860
+    second: BulletSpray (1)_137
+  - first:
+      213: 1355474689028196659
+    second: BulletSpray (1)_138
+  - first:
+      213: 464951406222220604
+    second: BulletSpray (1)_139
+  - first:
+      213: -7459175465709714384
+    second: BulletSpray (1)_140
+  - first:
+      213: 8486157393993525364
+    second: BulletSpray (1)_141
+  - first:
+      213: 8140184937830090671
+    second: BulletSpray (1)_142
+  - first:
+      213: -3208799461302607512
+    second: BulletSpray (1)_143
+  - first:
+      213: 2493854851348577441
+    second: BulletSpray (1)_144
+  - first:
+      213: 3010627942402312512
+    second: BulletSpray (1)_145
+  - first:
+      213: 1206412275835119439
+    second: BulletSpray (1)_146
+  - first:
+      213: 619084007803614919
+    second: BulletSpray (1)_147
+  - first:
+      213: 6454304687973174989
+    second: BulletSpray (1)_148
+  - first:
+      213: -7060326120512748896
+    second: BulletSpray (1)_149
+  - first:
+      213: 2442049362848153296
+    second: BulletSpray (1)_150
+  - first:
+      213: 7862315219152976377
+    second: BulletSpray (1)_151
+  - first:
+      213: 3175125577556117208
+    second: BulletSpray (1)_152
+  - first:
+      213: -6933732682769838871
+    second: BulletSpray (1)_153
+  - first:
+      213: -8322036131940011179
+    second: BulletSpray (1)_154
+  - first:
+      213: 1774149667937123930
+    second: BulletSpray (1)_155
+  - first:
+      213: -4648593524953662474
+    second: BulletSpray (1)_156
+  - first:
+      213: -8091335424235712207
+    second: BulletSpray (1)_157
+  - first:
+      213: 7976214364234064965
+    second: BulletSpray (1)_158
+  - first:
+      213: -3942802665060996703
+    second: BulletSpray (1)_159
+  - first:
+      213: -7780848511599318311
+    second: BulletSpray (1)_160
+  - first:
+      213: -8441893851501886103
+    second: BulletSpray (1)_161
+  - first:
+      213: 5697398245572494460
+    second: BulletSpray (1)_162
+  - first:
+      213: 894801576064571763
+    second: BulletSpray (1)_163
+  - first:
+      213: 367054415556229319
+    second: BulletSpray (1)_164
+  - first:
+      213: 4686962116938964844
+    second: BulletSpray (1)_165
+  - first:
+      213: 2916828673035748569
+    second: BulletSpray (1)_166
+  - first:
+      213: -5488064916986223785
+    second: BulletSpray (1)_167
+  - first:
+      213: -6350395164148050539
+    second: BulletSpray (1)_168
+  - first:
+      213: -5456657580904894904
+    second: BulletSpray (1)_169
+  - first:
+      213: -620815812112030758
+    second: BulletSpray (1)_170
+  - first:
+      213: -8751110389499964026
+    second: BulletSpray (1)_171
+  - first:
+      213: 5971627784073955181
+    second: BulletSpray (1)_172
+  - first:
+      213: 7505075421096375646
+    second: BulletSpray (1)_173
+  - first:
+      213: 5136391643087209183
+    second: BulletSpray (1)_174
+  - first:
+      213: -3455815276371997969
+    second: BulletSpray (1)_175
+  - first:
+      213: -7342670617369179680
+    second: BulletSpray (1)_176
+  - first:
+      213: 8937080608671917917
+    second: BulletSpray (1)_177
+  - first:
+      213: 5116248045649480418
+    second: BulletSpray (1)_178
+  - first:
+      213: -8419411722255003866
+    second: BulletSpray (1)_179
+  - first:
+      213: 3917490626304531993
+    second: BulletSpray (1)_180
+  - first:
+      213: 213515155399484422
+    second: BulletSpray (1)_181
+  - first:
+      213: 7409920539556561530
+    second: BulletSpray (1)_182
+  - first:
+      213: -5329431386252912285
+    second: BulletSpray (1)_183
+  - first:
+      213: -9096365653868500634
+    second: BulletSpray (1)_184
+  - first:
+      213: -3333816717324830886
+    second: BulletSpray (1)_185
+  - first:
+      213: 2533480651933958155
+    second: BulletSpray (1)_186
+  - first:
+      213: 8641464030469900891
+    second: BulletSpray (1)_187
+  - first:
+      213: -9092217959584607706
+    second: BulletSpray (1)_188
+  - first:
+      213: 7038713912618417411
+    second: BulletSpray (1)_189
+  - first:
+      213: 787533374607617481
+    second: BulletSpray (1)_190
+  - first:
+      213: -426205168429338477
+    second: BulletSpray (1)_191
+  - first:
+      213: -5976178698170315547
+    second: BulletSpray (1)_192
+  - first:
+      213: -2391514930677121949
+    second: BulletSpray (1)_193
+  - first:
+      213: -7907061971676235517
+    second: BulletSpray (1)_194
+  - first:
+      213: 380172413595219134
+    second: BulletSpray (1)_195
+  - first:
+      213: -4027465457975110797
+    second: BulletSpray (1)_196
+  - first:
+      213: -6926043081024850541
+    second: BulletSpray (1)_197
+  - first:
+      213: 641196498269718475
+    second: BulletSpray (1)_198
+  - first:
+      213: 6456503062802050554
+    second: BulletSpray (1)_199
+  - first:
+      213: -2964039457824272300
+    second: BulletSpray (1)_200
+  - first:
+      213: -3204622110923327088
+    second: BulletSpray (1)_201
+  - first:
+      213: -7091474993194286703
+    second: BulletSpray (1)_202
+  - first:
+      213: -2593774227978044482
+    second: BulletSpray (1)_203
+  - first:
+      213: 8115611522223676280
+    second: BulletSpray (1)_204
+  - first:
+      213: 8014091704454688597
+    second: BulletSpray (1)_205
+  - first:
+      213: -4832519430343247459
+    second: BulletSpray (1)_206
+  - first:
+      213: -5737940971000489660
+    second: BulletSpray (1)_207
+  - first:
+      213: -1303844105107742044
+    second: BulletSpray (1)_208
+  - first:
+      213: 6244139951675843117
+    second: BulletSpray (1)_209
+  - first:
+      213: -742709924114614595
+    second: BulletSpray (1)_210
+  - first:
+      213: -2360695178751104879
+    second: BulletSpray (1)_211
+  - first:
+      213: 5353853989147537291
+    second: BulletSpray (1)_212
+  - first:
+      213: 2432961690231677372
+    second: BulletSpray (1)_213
+  - first:
+      213: -7882136191574797402
+    second: BulletSpray (1)_214
+  - first:
+      213: 5008635549586495134
+    second: BulletSpray (1)_215
+  - first:
+      213: 5400721796865920127
+    second: BulletSpray (1)_216
+  - first:
+      213: 4321167723916969401
+    second: BulletSpray (1)_217
+  - first:
+      213: -5876768555160646952
+    second: BulletSpray (1)_218
+  - first:
+      213: -7590360641616968650
+    second: BulletSpray (1)_219
+  - first:
+      213: -6691597255768406270
+    second: BulletSpray (1)_220
+  - first:
+      213: -3335850716097172119
+    second: BulletSpray (1)_221
+  - first:
+      213: -2800120364444041507
+    second: BulletSpray (1)_222
+  - first:
+      213: -1453761746906903941
+    second: BulletSpray (1)_223
+  - first:
+      213: 3567234048553244779
+    second: BulletSpray (1)_224
+  - first:
+      213: 5661177565156574273
+    second: BulletSpray (1)_225
+  - first:
+      213: -6621981833793229126
+    second: BulletSpray (1)_226
+  - first:
+      213: -8582465343243937172
+    second: BulletSpray (1)_227
+  - first:
+      213: 2678143539378770477
+    second: BulletSpray (1)_228
+  - first:
+      213: -6204319530398689328
+    second: BulletSpray (1)_229
+  - first:
+      213: 61922955232686618
+    second: BulletSpray (1)_230
+  - first:
+      213: -1689857615460085221
+    second: BulletSpray (1)_231
+  - first:
+      213: 8578748759749073673
+    second: BulletSpray (1)_232
+  - first:
+      213: 5142840849293793056
+    second: BulletSpray (1)_233
+  - first:
+      213: 308602552639530232
+    second: BulletSpray (1)_234
+  - first:
+      213: 6989283155935278437
+    second: BulletSpray (1)_235
+  - first:
+      213: -4080425300808690428
+    second: BulletSpray (1)_236
+  - first:
+      213: -4072066016935325932
+    second: BulletSpray (1)_237
+  - first:
+      213: 2614749077286445725
+    second: BulletSpray (1)_238
+  - first:
+      213: 6843553452296875828
+    second: BulletSpray (1)_239
+  - first:
+      213: 6773803478424957168
+    second: BulletSpray (1)_240
+  - first:
+      213: 8097799710697139098
+    second: BulletSpray (1)_241
+  - first:
+      213: -6042094419807962218
+    second: BulletSpray (1)_242
+  - first:
+      213: 6883629356078531536
+    second: BulletSpray (1)_243
+  - first:
+      213: 9153210912395055224
+    second: BulletSpray (1)_244
+  - first:
+      213: 2064665848478023483
+    second: BulletSpray (1)_245
+  - first:
+      213: -8872967439578085163
+    second: BulletSpray (1)_246
+  - first:
+      213: 8496343501935186597
+    second: BulletSpray (1)_247
+  - first:
+      213: 3387029349635450845
+    second: BulletSpray (1)_248
+  - first:
+      213: 4166886061748654887
+    second: BulletSpray (1)_249
+  - first:
+      213: 559740265678366913
+    second: BulletSpray (1)_250
+  - first:
+      213: -3804647976263209836
+    second: BulletSpray (1)_251
+  - first:
+      213: 150210954667121232
+    second: BulletSpray (1)_252
+  - first:
+      213: 6445530135829792748
+    second: BulletSpray (1)_253
+  - first:
+      213: -4700738385094419032
+    second: BulletSpray (1)_254
+  - first:
+      213: 2419745412920323075
+    second: BulletSpray (1)_255
+  - first:
+      213: -651561487107932354
+    second: BulletSpray (1)_256
+  - first:
+      213: -5311549202574019598
+    second: BulletSpray (1)_257
+  - first:
+      213: 2239779558360055977
+    second: BulletSpray (1)_258
+  - first:
+      213: 2220884153242897066
+    second: BulletSpray (1)_259
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BulletSpray (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4800
+        width: 2400
+        height: 2400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d96ff0a03268a10800000000000000
+      internalID: 1911253617989819804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletSpray (1)_1
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4800
+        width: 2400
+        height: 2400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2429bd8e66261aa70800000000000000
+      internalID: 8836452138010513986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletSpray (1)_2
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 4800
+        width: 2400
+        height: 2400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6850b026d08fd930800000000000000
+      internalID: 4170193437128153195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletSpray (1)_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 2400
+        height: 2400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27fd66b0d345dfb40800000000000000
+      internalID: 5475625343113420658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletSpray (1)_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2400
+        width: 2400
+        height: 2400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9011843aa81f87530800000000000000
+      internalID: 3853095058962649353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletSpray (1)_5
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 2400
+        width: 2400
+        height: 2400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ba95e2c3b476eb0800000000000000
+      internalID: -4726726562054296747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletSpray (1)_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2400
+        height: 2400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e997cb59ac42cc2e0800000000000000
+      internalID: -2104266473374713442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletSpray (1)_7
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 2400
+        height: 2400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6561ecfe8d6c71930800000000000000
+      internalID: 4113975419664733782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletSpray (1)_8
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 0
+        width: 2400
+        height: 2400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2526f6f3c38d7210800000000000000
+      internalID: 1332365942456722735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ffcc55640f749544c98103f8338dcc8f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BulletSpray (1)_0: 1911253617989819804
+      BulletSpray (1)_1: 8836452138010513986
+      BulletSpray (1)_2: 4170193437128153195
+      BulletSpray (1)_3: 5475625343113420658
+      BulletSpray (1)_4: 3853095058962649353
+      BulletSpray (1)_5: -4726726562054296747
+      BulletSpray (1)_6: -2104266473374713442
+      BulletSpray (1)_7: 4113975419664733782
+      BulletSpray (1)_8: 1332365942456722735
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
