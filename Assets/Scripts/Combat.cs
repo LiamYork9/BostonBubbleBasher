@@ -43,11 +43,11 @@ public class Combat : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Attack(i);
+            gameObject.GetComponent<Animator>().SetTrigger("Melee");
         }
         else if(Input.GetKeyDown(KeyCode.Mouse1))
         {
-            Cast(i);
+            gameObject.GetComponent<Animator>().SetTrigger("Range");
         }
     }
 }

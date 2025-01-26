@@ -31,6 +31,8 @@ public class PlayerScript : MonoBehaviour
 
     public Text spText;
 
+    public Text healthText;
+
     Vector2 movement;
 
     public GameObject deathScreen;
@@ -89,7 +91,7 @@ public class PlayerScript : MonoBehaviour
      LevelUp();
         lvText.text = "LV: " + lv;
         spText.text = "Skill Points: " + skillPoint;
-
+        healthText.text = "HP: " + hp;
     }
 
      void FixedUpdate() 
