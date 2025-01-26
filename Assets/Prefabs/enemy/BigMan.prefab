@@ -1198,7 +1198,7 @@ MonoBehaviour:
   kickNum: 0
   ranKick: 0
   randPoint: 0
-  Bullets: {fileID: 6843236527405126918}
+  Bullets: {fileID: 4449992849033038747}
   timer: {fileID: 97252303348501465}
 --- !u!50 &1759865843245016221
 Rigidbody2D:
@@ -1257,7 +1257,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edc0ccf88cd7da1468e1b148e9a7fb80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pScript: {fileID: 0}
   health: 5
+  expYeild: 0
 --- !u!95 &488030372886825482
 Animator:
   serializedVersion: 7
