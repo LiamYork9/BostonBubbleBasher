@@ -207,6 +207,7 @@ public class SkillTree : MonoBehaviour
     public void hpUp()
     {
         player.hp=player.hp+1;
+        player.curretnHP = player.curretnHP+1;
     }
 
     public void Update()
