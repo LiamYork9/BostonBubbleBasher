@@ -9,6 +9,8 @@ public class pausemenu : MonoBehaviour
 
     public UIToggle uiToggle;
 
+    public GameObject killIt;
+
     // Update is called once per frame
     void Update()
     {
@@ -49,6 +51,8 @@ public class pausemenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Mainmenu");
+        Destroy(killIt);
+
     }
     public void QuitGame()
     {

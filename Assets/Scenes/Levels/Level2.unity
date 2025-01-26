@@ -1741,6 +1741,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1730870928040740394, guid: 97774f45438c9364fa4a4bbf8c745494, type: 3}
+      propertyPath: killIt
+      value: 
+      objectReference: {fileID: 1671002518}
+    - target: {fileID: 1730870928040740394, guid: 97774f45438c9364fa4a4bbf8c745494, type: 3}
       propertyPath: uiToggle
       value: 
       objectReference: {fileID: 0}
@@ -3662,6 +3666,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1671002518 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2815416348179534243, guid: bf83a6319f1b5754683effa1617875e0, type: 3}
+  m_PrefabInstance: {fileID: 1487260305}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1678920008
 GameObject:
   m_ObjectHideFlags: 0
