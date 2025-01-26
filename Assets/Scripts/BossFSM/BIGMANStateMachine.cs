@@ -7,22 +7,29 @@ public class BIGMANStateMachine : SM_StateMachine
 {
     //States
     public RandomAttack random;
-    public ConsecutiveShooting conShooting;
     public Kick kick;
 
     //var
     public Transform[] points;
     public Transform curPoint;
     public float speed;
+    public int kickDmg;
+    public int bulletDmg;
     public GameObject player;
-    public GameObject gun;
+    public GameObject kickHB;
     public Rigidbody2D rb;
+    public int moveCounter;
+    public int kickChance;
+    public int kickNum;
+    public int ranKick;
+    public int randPoint;
+    public GameObject Bullets;
+    public timer timer;
 
 
     private void Awake()
     {
         states.Add(random);
-        states.Add(conShooting);
         states.Add(kick);
 
         foreach (SM_State s in states)
@@ -32,15 +39,49 @@ public class BIGMANStateMachine : SM_StateMachine
     void Start()
     {
         player = GameObject.FindWithTag("Player");
-        gun = GameObject.FindWithTag("BossGun");
         rb = GetComponent<Rigidbody2D>();
-        curPoint = points[0];
+        timer = GetComponent<timer>();
+        kickNum = Random.Range(1, kickChance);
+        ChangeState(nameof(RandomAttack));
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 dir = curPoint.position - transform.position;
-        rb.linearVelocity = dir * speed;
     }
+
+    public void Shoot(Transform _point)
+    {
+        Debug.Log("Shoot");
+        curPoint = _point;
+        if (Vector2.Distance(transform.position, _point.position) < .2f && timer.hasTime)
+        {
+            timer.StartTime();
+            Bullets.SetActive(true);
+        }
+        else
+        {
+            Bullets.SetActive(false);
+            curPoint = points[0];
+            if (Vector2.Distance(transform.position, curPoint.position) < .2f)
+            {
+                moveCounter = 0;
+                timer.ResetTime();
+            }
+            return;
+        }
+        
+    }
+
+    public void mKick()
+    {
+        curPoint = player.transform;
+        kickHB.SetActive(true);
+        transform.position = Vector2.MoveTowards(transform.position, curPoint.position, speed * Time.deltaTime);
+        if (Vector2.Distance(transform.position, curPoint.position) < 1f)
+        {
+            ChangeState(nameof(RandomAttack));
+        }
+    }
+    
 }

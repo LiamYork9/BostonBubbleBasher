@@ -11,7 +11,8 @@ TagManager:
   - TargetArea2
   - Enemy
   - BossPoints
-  - BossGun
+  - KickZone
+  - Boss
   layers:
   - Default
   - TransparentFX
