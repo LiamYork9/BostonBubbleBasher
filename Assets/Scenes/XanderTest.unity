@@ -346,6 +346,10 @@ PrefabInstance:
       propertyPath: spText
       value: 
       objectReference: {fileID: 477394299}
+    - target: {fileID: 6547095928965129261, guid: 97774f45438c9364fa4a4bbf8c745494, type: 3}
+      propertyPath: healthText
+      value: 
+      objectReference: {fileID: 477394299}
     - target: {fileID: 6819233813233282278, guid: 97774f45438c9364fa4a4bbf8c745494, type: 3}
       propertyPath: m_Name
       value: Player

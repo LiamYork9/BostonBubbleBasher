@@ -66,11 +66,15 @@ public class PlayerScript : MonoBehaviour
         if(movement.x<0 && !stayFacing)
         {
             facing = -1;
+            gameObject.GetComponent<SpriteRenderer>().flipX=true;
         }
         else if (movement.x>0 && !stayFacing)
         {
             facing = 1;
+             gameObject.GetComponent<SpriteRenderer>().flipX=false;
         }
+
+
 
         if(movement.x>0.2f||movement.x<-0.2f||movement.y>0.2f||movement.y<-0.2f)
         {
