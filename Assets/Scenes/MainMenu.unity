@@ -1153,7 +1153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e924f6059e8f047a052aa5cc5d6654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Level2
+  sceneName: Level1
 --- !u!82 &1228362486
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1266,6 +1266,7 @@ MonoBehaviour:
   GameIsPaused: 0
   pauseMenuUI: {fileID: 954343503}
   uiToggle: {fileID: 2130792503}
+  killIt: {fileID: 0}
 --- !u!114 &1228362488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1281,6 +1282,7 @@ MonoBehaviour:
   GameIsPaused: 0
   pauseMenuUI: {fileID: 516816390}
   uiToggle: {fileID: 2130792503}
+  killIt: {fileID: 0}
 --- !u!1001 &1303218824
 PrefabInstance:
   m_ObjectHideFlags: 0

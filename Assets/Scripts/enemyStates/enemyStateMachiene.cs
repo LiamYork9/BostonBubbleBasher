@@ -71,6 +71,17 @@ public class enemyStateMachiene : SM_StateMachine
     // Update is called once per frame
     void Update()
     {
+        if(target!=null)
+        {
+            if(target.transform.position.x<=gameObject.transform.position.x)
+            {
+                gameObject.GetComponent<SpriteRenderer>().flipX=true;
+            }
+            else
+            {
+                gameObject.GetComponent<SpriteRenderer>().flipX=false;
+            }
+        }
         AddToList();
         if (path == null)
             return;
@@ -126,8 +137,9 @@ public class enemyStateMachiene : SM_StateMachine
     public void Attack()
     {
         Debug.Log("Attacked");
-        foreach(GameObject col in attackingList)
-            col.GetComponent<PlayerScript>().currentHP -= damage;
+        // foreach(GameObject col in attackingList)
+        //     col.GetComponent<PlayerScript>().curretnHP -= damage;
+        gameObject.GetComponent<Animator>().SetTrigger("Punch");
     }
     public void AddToList()
     {

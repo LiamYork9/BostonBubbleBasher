@@ -21,11 +21,15 @@ public class Health : MonoBehaviour
 
     public void Hurt(int damage)
     {
-        health -= damage;
-        if (health <= 0)
+        if(health > 0)
         {
-            Die();
+             health -= damage;
+         if (health <= 0)
+            {
+                Die();
+            }
         }
+       
     }
 
     public void Die()

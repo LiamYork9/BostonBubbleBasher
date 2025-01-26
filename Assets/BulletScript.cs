@@ -11,7 +11,7 @@ public class BulletScript : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        boss = GameObject.FindGameObjectWithTag("Boss");
+        boss = GameObject.FindGameObjectWithTag("Enemy");
         nextTick = Time.time + dmgTickRate;
     }
     private void OnTriggerStay2D(Collider2D collision)
