@@ -38,6 +38,8 @@ public class PlayerScript : MonoBehaviour
     Vector2 movement;
 
     public GameObject deathScreen;
+
+    public int killCount;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
