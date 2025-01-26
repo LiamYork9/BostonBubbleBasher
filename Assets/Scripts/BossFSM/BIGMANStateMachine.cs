@@ -17,6 +17,13 @@ public class BIGMANStateMachine : SM_StateMachine
     public GameObject player;
     public GameObject gun;
     public Rigidbody2D rb;
+    public int moveCounter;
+    public int kickChance;
+    public int kickNum;
+    public int ranKick;
+    public int randPoint;
+    public GameObject Bullets;
+    public timer timer;
 
 
     private void Awake()
@@ -34,13 +41,37 @@ public class BIGMANStateMachine : SM_StateMachine
         player = GameObject.FindWithTag("Player");
         gun = GameObject.FindWithTag("BossGun");
         rb = GetComponent<Rigidbody2D>();
-        curPoint = points[0];
+        timer = GetComponent<timer>();
+        kickNum = Random.Range(1, kickChance);
+        ChangeState(nameof(RandomAttack));
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 dir = curPoint.position - transform.position;
-        rb.linearVelocity = dir * speed;
+
+    }
+
+    public void Shoot(Transform _point)
+    {
+        Debug.Log("Shoot");
+        curPoint = _point;
+        if (Vector2.Distance(transform.position, _point.position) < .2f && timer.hasTime)
+        {
+            timer.StartTime();
+            Bullets.SetActive(true);
+        }
+        else
+        {
+            Bullets.SetActive(false);
+            curPoint = points[0];
+            if (Vector2.Distance(transform.position, curPoint.position) < .2f)
+            {
+                moveCounter = 0;
+                timer.ResetTime();
+            }
+            return;
+        }
+        
     }
 }
