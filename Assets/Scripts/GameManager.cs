@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
         player.GetComponent<PlayerScript>().shieldUnlocked = shieldUnlocked;
     }
 
-    void Start()
+    public void Start()
     {
         player = GameObject.FindWithTag("Player");
         gameObject.GetComponentInChildren<UIToggle>().pauseMenu = player.GetComponentInChildren<pausemenu>();
@@ -47,9 +47,15 @@ public class GameManager : MonoBehaviour
         temp.shieldUnlocked = shieldUnlocked;
         temp.lv = lv;
         temp.hp = maxhp;
+        temp.skillPoint=skillPoint;
         temp.moveSpeed = moveSpeed;
         temp.attack = attack;
         temp.defense = defense;
+    }
+
+    public void Update()
+    {
+      
     }
 
     public void UnlockAttacks(GameObject melee, GameObject range)
@@ -111,6 +117,25 @@ public class GameManager : MonoBehaviour
     {
        defense= newValue;
         player.GetComponent<PlayerScript>().defense=defense;
+    }
+
+    public void LoadThisStuff()
+    {
+          player = GameObject.FindWithTag("Player");
+        gameObject.GetComponentInChildren<UIToggle>().pauseMenu = player.GetComponentInChildren<pausemenu>();
+        player.GetComponentInChildren<pausemenu>().uiToggle = gameObject.GetComponentInChildren<UIToggle>();
+        player.GetComponent<Combat>().meleeAttacks = meleeHitboxes;
+        player.GetComponent<Combat>().magicAttacks = rangeHitboxes;
+        PlayerScript temp =player.GetComponent<PlayerScript>();
+        temp.lvText = lvText;
+        temp.spText = spText;
+        temp.healthText = healthText;
+        temp.shieldUnlocked = shieldUnlocked;
+        temp.lv = lv;
+        temp.hp = maxhp;
+        temp.moveSpeed = moveSpeed;
+        temp.attack = attack;
+        temp.defense = defense;
     }
 
 }

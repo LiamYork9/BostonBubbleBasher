@@ -141,9 +141,9 @@ public class PlayerScript : MonoBehaviour
     {
         if(currentExp == (exp + 10 * lv))
         {
-            lv = lv + 1;
+            GameManager.Instance.UpdateLVL(GameManager.Instance.lv+1);
             currentExp = 0;
-            skillPoint = skillPoint + 1;
+            GameManager.Instance.UpdateSkillPoint(GameManager.Instance.skillPoint+1);
         }
     }
 }
