@@ -8,23 +8,33 @@ public class timer : MonoBehaviour
     public UnityEvent timeout;
     public float timeLeft;
     public float timeSet;
+    public bool hasTime;
 
     void Start()
     {
         timeLeft = timeSet;
+        hasTime = true;
     }
     public void StartTime()
     {
-        if(timeLeft > 0.0f){
+        hasTime = true;
+        if (timeLeft > 0.0f){
             timeLeft -= Time.deltaTime;
+            
 
-            if(timeLeft <= 0.0f){
+            if (timeLeft <= 0.0f){
                 timeout.Invoke();
+                hasTime = false;
             }
         }
     }
-    public void ResetTime(){
-        timeLeft += timeSet;
+    public void ResetTime()
+    {
+        if (timeLeft <= 0.0f)
+        {
+            timeLeft += timeSet;
+            hasTime = true;
+        }
     }
    
 }

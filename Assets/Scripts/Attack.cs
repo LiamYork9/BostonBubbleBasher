@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Attack : MonoBehaviour
 {
     public int damage;
+    public UnityEvent<GameObject> hitTarget;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,6 +23,9 @@ public class Attack : MonoBehaviour
         {
             Debug.Log("Enemy");
             other.GetComponent<Health>()?.Hurt(damage);
+            hitTarget.Invoke(other.gameObject);
         }
     }
+
+    
 }
