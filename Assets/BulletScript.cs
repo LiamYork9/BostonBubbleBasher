@@ -24,7 +24,7 @@ public class BulletScript : MonoBehaviour
             }
             if (canDmg)
             {
-                player.GetComponent<PlayerScript>().curretnHP -= boss.GetComponent<BIGMANStateMachine>().bulletDmg;
+                player.GetComponent<PlayerScript>().currentHP -= boss.GetComponent<BIGMANStateMachine>().bulletDmg;
                 nextTick = Time.time + dmgTickRate;
                 canDmg = false;
             }

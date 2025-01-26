@@ -19,6 +19,14 @@ public class GameManager : MonoBehaviour
     public GameObject bubbleShield;
     public bool shieldUnlocked;
 
+    //player values
+    public int lv = 1;
+    public int maxhp = 10;
+    public int moveSpeed = 5;
+    public int attack = 5;
+    public int defense = 1;
+    public int skillPoint = 0;
+
     public void UnlockShield()
     {
         shieldUnlocked = true;
@@ -32,11 +40,16 @@ public class GameManager : MonoBehaviour
         player.GetComponentInChildren<pausemenu>().uiToggle = gameObject.GetComponentInChildren<UIToggle>();
         player.GetComponent<Combat>().meleeAttacks = meleeHitboxes;
         player.GetComponent<Combat>().magicAttacks = rangeHitboxes;
-        player.GetComponent<PlayerScript>().lvText = lvText;
-        player.GetComponent<PlayerScript>().spText = spText;
-        player.GetComponent<PlayerScript>().healthText = healthText;
-        player.GetComponent<PlayerScript>().shieldUnlocked = shieldUnlocked;
-
+        PlayerScript temp =player.GetComponent<PlayerScript>();
+        temp.lvText = lvText;
+        temp.spText = spText;
+        temp.healthText = healthText;
+        temp.shieldUnlocked = shieldUnlocked;
+        temp.lv = lv;
+        temp.hp = maxhp;
+        temp.moveSpeed = moveSpeed;
+        temp.attack = attack;
+        temp.defense = defense;
     }
 
     public void UnlockAttacks(GameObject melee, GameObject range)
@@ -60,4 +73,44 @@ public class GameManager : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
+    //Stat Updates
+    public void UpdateMaxHP(int newValue)
+    {
+        maxhp = newValue;
+        player.GetComponent<PlayerScript>().hp=maxhp;
+        
+        player.GetComponent<PlayerScript>().currentHP=maxhp;
+    }
+
+    public void UpdateLVL(int newValue)
+    {
+        lv= newValue;
+        player.GetComponent<PlayerScript>().lv=lv;
+    }
+
+    public void UpdateSpeed(int newValue)
+    {
+        moveSpeed= newValue;
+        player.GetComponent<PlayerScript>().moveSpeed=moveSpeed;
+    }
+
+    public void UpdateAttack(int newValue)
+    {
+        attack= newValue;
+        player.GetComponent<PlayerScript>().attack=attack;
+    }
+
+    public void UpdateSkillPoint(int newValue)
+    {
+       skillPoint= newValue;
+        player.GetComponent<PlayerScript>().skillPoint=skillPoint;
+    }
+
+    public void UpdateDefense(int newValue)
+    {
+       defense= newValue;
+        player.GetComponent<PlayerScript>().defense=defense;
+    }
+
 }
