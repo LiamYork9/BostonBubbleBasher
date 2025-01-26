@@ -12,16 +12,17 @@ public class Spells : MonoBehaviour
 
     public void UnlockFireball()
     {
-        player.GetComponent<Combat>().meleeAttacks.Add(fireballPrefabs[0]);
-        
-        player.GetComponent<Combat>().magicAttacks.Add(fireballPrefabs[1]);
+        GameManager.Instance.UnlockAttacks(fireballPrefabs[0],fireballPrefabs[1]);
     }
 
     public void UnlockPoison()
     {
-        player.GetComponent<Combat>().meleeAttacks.Add(poisonPrefabs[0]);
-        
-        player.GetComponent<Combat>().magicAttacks.Add(poisonPrefabs[1]);
+        GameManager.Instance.UnlockAttacks(poisonPrefabs[0],poisonPrefabs[1]);
+    }
+
+    public void UnlockReactiveShield()
+    {
+        GameManager.Instance.UnlockShield();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

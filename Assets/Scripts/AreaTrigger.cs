@@ -3,25 +3,24 @@ using UnityEngine;
 public class AreaTrigger : MonoBehaviour
 {
 
-    public GameObject guy1;
-     public GameObject[] gameObjects;
+    public PlayerScript pScript;
+    public GameObject triggerArea;
+
+    public int requierdKills = 0;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-         gameObjects = GameObject.FindGameObjectsWithTag("Enemy");
+        //triggerArea.SetActive(false);
     }
 
     // Update is called once per frame
-    void OnTriggerEnter2D(Collider2D other)
+    public void Update()
     {
-       
-        gameObjects = GameObject.FindGameObjectsWithTag("Enemy");
+       if(pScript.killCount == requierdKills)
+       {
+            triggerArea.SetActive(true);
+       }
         
-
-        if (gameObjects.Length == 0)
-        {
-           
-            guy1.SetActive(true);
-        }
     }
 }

@@ -35,9 +35,13 @@ public class PlayerScript : MonoBehaviour
 
     public Text healthText;
 
+    public bool shieldUnlocked;
+
     Vector2 movement;
 
     public GameObject deathScreen;
+
+    public int killCount;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -53,9 +57,11 @@ public class PlayerScript : MonoBehaviour
 
         
 
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space")&&shieldUnlocked)
         {
-            hp -= 5;
+            GameObject temp = (Instantiate(GameManager.Instance.bubbleShield,transform.position,transform.rotation));
+            temp.transform.parent = GameManager.Instance.player.transform;
+            
         }
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
