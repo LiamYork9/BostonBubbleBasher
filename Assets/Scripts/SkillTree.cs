@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 public class SkillTree : MonoBehaviour
 {
@@ -54,6 +55,8 @@ public class SkillTree : MonoBehaviour
 
     //Skill Points
     //public int requireVal = skillPoint;
+
+   
 
     public void atkButonPressed()
     {
@@ -235,7 +238,7 @@ public class SkillTree : MonoBehaviour
         }
     }
 
-    void Start()
+    void Awake()
     {
         player = GameManager.Instance.player.GetComponent<PlayerScript>();
     }
