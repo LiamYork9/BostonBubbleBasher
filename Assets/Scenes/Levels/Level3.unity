@@ -281,7 +281,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0.21777207, g: 0.7610062, b: 0.7555677, a: 1}
+  m_Color: {r: 0.21960786, g: 0.7607844, b: 0.7568628, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1436,9 +1436,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5003507821014945542, guid: 89cedca193828c742abb020a92c5db9e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8836584710949375957, guid: 89cedca193828c742abb020a92c5db9e, type: 3}
       propertyPath: m_Name
       value: BigMan (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8836584710949375957, guid: 89cedca193828c742abb020a92c5db9e, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 9160047837326069256, guid: 89cedca193828c742abb020a92c5db9e, type: 3}
       propertyPath: curPoint
