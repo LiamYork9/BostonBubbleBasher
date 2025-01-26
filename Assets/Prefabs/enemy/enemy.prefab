@@ -401,6 +401,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 16
+    m_Bits: 8
   areaRange: 2
   enemyQueue: []
