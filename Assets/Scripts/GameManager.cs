@@ -19,6 +19,9 @@ public class GameManager : MonoBehaviour
     public GameObject bubbleShield;
     public bool shieldUnlocked;
 
+    public GameObject soap;
+    public bool soapUnlocked;
+
     //player values
     public int lv = 1;
     public int maxhp = 10;
@@ -31,6 +34,12 @@ public class GameManager : MonoBehaviour
     {
         shieldUnlocked = true;
         player.GetComponent<PlayerScript>().shieldUnlocked = shieldUnlocked;
+    }
+
+    public void UnlockSoap()
+    {
+        soapUnlocked = true;
+        player.GetComponent<PlayerScript>().soapUnlocked = soapUnlocked;
     }
 
     void Start()

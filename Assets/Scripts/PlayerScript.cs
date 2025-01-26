@@ -37,6 +37,8 @@ public class PlayerScript : MonoBehaviour
 
     public bool shieldUnlocked;
 
+    public bool soapUnlocked;
+
     Vector2 movement;
 
     public GameObject deathScreen;
@@ -55,13 +57,16 @@ public class PlayerScript : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        
 
         if (Input.GetKeyDown("space")&&shieldUnlocked)
         {
             GameObject temp = (Instantiate(GameManager.Instance.bubbleShield,transform.position,transform.rotation));
             temp.transform.parent = GameManager.Instance.player.transform;
             
+        }
+        if (Input.GetKeyDown("f")&&soapUnlocked)
+        {
+            //call soap script
         }
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
