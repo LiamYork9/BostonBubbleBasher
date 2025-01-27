@@ -196,9 +196,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2718297414500439173, guid: bf83a6319f1b5754683effa1617875e0, type: 3}
-      propertyPath: maxhp
-      value: 11
+    - target: {fileID: 33756367549796847, guid: bf83a6319f1b5754683effa1617875e0, type: 3}
+      propertyPath: healButt
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33756367549796847, guid: bf83a6319f1b5754683effa1617875e0, type: 3}
+      propertyPath: healText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33756367549796847, guid: bf83a6319f1b5754683effa1617875e0, type: 3}
+      propertyPath: soapButt
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33756367549796847, guid: bf83a6319f1b5754683effa1617875e0, type: 3}
+      propertyPath: soapText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33756367549796847, guid: bf83a6319f1b5754683effa1617875e0, type: 3}
+      propertyPath: heal2Butt
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33756367549796847, guid: bf83a6319f1b5754683effa1617875e0, type: 3}
+      propertyPath: heal2Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33756367549796847, guid: bf83a6319f1b5754683effa1617875e0, type: 3}
+      propertyPath: telepopButt
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33756367549796847, guid: bf83a6319f1b5754683effa1617875e0, type: 3}
+      propertyPath: telepopText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33756367549796847, guid: bf83a6319f1b5754683effa1617875e0, type: 3}
+      propertyPath: placeShieldButt
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33756367549796847, guid: bf83a6319f1b5754683effa1617875e0, type: 3}
+      propertyPath: placeShieldText
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2815416348179534243, guid: bf83a6319f1b5754683effa1617875e0, type: 3}
       propertyPath: m_Name
@@ -1418,7 +1454,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edc0ccf88cd7da1468e1b148e9a7fb80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pScript: {fileID: 0}
   health: 5
+  expYeild: 0
 --- !u!1001 &6392574223356648529
 PrefabInstance:
   m_ObjectHideFlags: 0

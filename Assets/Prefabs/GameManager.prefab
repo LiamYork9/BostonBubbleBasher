@@ -137,6 +137,14 @@ MonoBehaviour:
   healthText: {fileID: 5689794213055642182}
   bubbleShield: {fileID: 4290785158281140171, guid: a09f40f3ed7c41e4fad86d12d5b82eda, type: 3}
   shieldUnlocked: 0
+  soap: {fileID: 0}
+  soapUnlocked: 0
+  lv: 1
+  maxhp: 11
+  moveSpeed: 5
+  attack: 5
+  defense: 1
+  skillPoint: 0
 --- !u!1001 &5309957326109675512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -187,7 +195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 506591944022016916, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.945265
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 506591944022016916, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -195,23 +203,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 506591944022016916, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 506591944022016916, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 506591944022016916, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 506591944022016916, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -928.708
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 506591944022016916, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -595.9041
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 506591944022016916, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -225,12 +233,156 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1081948746288974284, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -414
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630635172237238461, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_text
+      value: 'Shoot a fireball within a bubble for more damage
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630635172237238461, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630635172237238461, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_margin.w
+      value: -94.032104
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630635172237238461, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2255071335388207817, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2255071335388207817, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -70
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762447145021710730, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_text
+      value: "Bubble \nShield"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2850680422155610066, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_text
+      value: 'Create a shield that violently pops whenever an enemy gets close
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2850680422155610066, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2850680422155610066, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_margin.w
+      value: -161.82278
+      objectReference: {fileID: 0}
+    - target: {fileID: 2850680422155610066, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2954130574526697948, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -414
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571882615408958921, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 414
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674309900442722631, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 414
+      objectReference: {fileID: 0}
+    - target: {fileID: 4109185710785588186, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_text
+      value: 'Shoot a poison bubble to deal damage over time
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4109185710785588186, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4109185710785588186, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_margin.w
+      value: -131.20764
+      objectReference: {fileID: 0}
+    - target: {fileID: 4109185710785588186, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316269780350967319, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: healButt
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316269780350967319, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: healText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316269780350967319, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: soapButt
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316269780350967319, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: soapText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316269780350967319, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: heal2Butt
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316269780350967319, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: heal2Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316269780350967319, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: telepopButt
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316269780350967319, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: telepopText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316269780350967319, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: placeShieldButt
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316269780350967319, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: placeShieldText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5862105257633813426, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5862105257633813426, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 7898366354468365767, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
       propertyPath: m_Name
       value: SkillTreeUICanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7898366354468365767, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6651522891211756420, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+    - {fileID: 98476378570559692, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+    - {fileID: 3138578646221263597, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+    - {fileID: 6254653361775722067, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+    - {fileID: 4800702333229729428, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+    - {fileID: 6202417305066618860, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+    - {fileID: 1580072831296898132, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+    - {fileID: 994968447657075612, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+    - {fileID: 3603852824184432786, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
+    - {fileID: 4812304437672516272, guid: 4e038470a7213854f9750e125967e7e3, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e038470a7213854f9750e125967e7e3, type: 3}

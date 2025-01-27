@@ -167,6 +167,7 @@ public class SkillTree : MonoBehaviour
         if (player.skillPoint >= 1)
         {
             soapChecker++;
+            spells.UnlockSoap();
             soapText.color = Color.gray;
             player.skillPoint--;
             Button soapButton = soapButt.GetComponent<Button>();
