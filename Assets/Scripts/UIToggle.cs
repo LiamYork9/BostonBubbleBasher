@@ -13,6 +13,7 @@ public class UIToggle : MonoBehaviour
     {
         if(pauseMenu.GameIsPaused == false){
         canvas.SetActive(!canvas.activeInHierarchy);
+        canvas.GetComponent<SkillTree>().Awake();
         }
     }
 

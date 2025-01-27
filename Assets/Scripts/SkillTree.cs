@@ -64,7 +64,7 @@ public class SkillTree : MonoBehaviour
         {
             atkCounter++;
             atkNumberText.text = "Atk:" + atkCounter + "";
-            player.skillPoint--;
+            GameManager.Instance.UpdateSkillPoint(player.skillPoint-1);
         }
     }
 
@@ -74,7 +74,7 @@ public class SkillTree : MonoBehaviour
         {
             defCounter++;
             defNumberText.text = "Def:" + defCounter + "";
-            player.skillPoint--;
+            GameManager.Instance.UpdateSkillPoint(player.skillPoint-1);
         }
     }
 
@@ -84,7 +84,7 @@ public class SkillTree : MonoBehaviour
         {
             speedCounter++;
             speedNumberText.text = "Speed:" + speedCounter + "";
-            player.skillPoint--;
+            GameManager.Instance.UpdateSkillPoint(player.skillPoint-1);
         }
     }
 
@@ -94,7 +94,7 @@ public class SkillTree : MonoBehaviour
         {
             hpCounter++;
             hpNumberText.text = "HP:" + hpCounter + "";
-            player.skillPoint--;
+            GameManager.Instance.UpdateSkillPoint(player.skillPoint-1);
         }
     }
 
@@ -105,7 +105,7 @@ public class SkillTree : MonoBehaviour
             fireballChecker++;
             spells.UnlockFireball();
             fireballText.color = Color.gray;
-            player.skillPoint--;
+            GameManager.Instance.UpdateSkillPoint(player.skillPoint-1);
             Button fireBallButton = fireButton.GetComponent<Button>();
             fireBallButton.enabled = false;
         }
@@ -118,7 +118,7 @@ public class SkillTree : MonoBehaviour
             poisonChecker++;
             spells.UnlockPoison();
             poisonText.color = Color.gray;
-            player.skillPoint--;
+            GameManager.Instance.UpdateSkillPoint(player.skillPoint-1);
             Button poisonButton = poisonButt.GetComponent<Button>();
             poisonButton.enabled = false;
         }
@@ -131,7 +131,7 @@ public class SkillTree : MonoBehaviour
             reactShieldChecker++;
             spells.UnlockReactiveShield();
             reactShieldText.color = Color.gray;
-            player.skillPoint--;
+            GameManager.Instance.UpdateSkillPoint(player.skillPoint-1);
             Button reactShieldButton = reactShieldButt.GetComponent<Button>();
             reactShieldButton.enabled = false;
 
@@ -144,7 +144,7 @@ public class SkillTree : MonoBehaviour
         {
             placeShieldChecker++;
             placeShieldText.color = Color.gray;
-            player.skillPoint--;
+            GameManager.Instance.UpdateSkillPoint(player.skillPoint-1);
             Button placeShieldButton = placeShieldButt.GetComponent<Button>();
             placeShieldButton.enabled = false;
         }
@@ -156,7 +156,7 @@ public class SkillTree : MonoBehaviour
         {
             telepopChecker++;
             telepopText.color = Color.gray;
-            player.skillPoint--;
+            GameManager.Instance.UpdateSkillPoint(player.skillPoint-1);
             Button telepopButton = telepopButt.GetComponent<Button>();
             telepopButton.enabled = false;
         }
@@ -167,9 +167,9 @@ public class SkillTree : MonoBehaviour
         if (player.skillPoint >= 1)
         {
             soapChecker++;
-            spells.UnlockSoap();
+            //spells.UnlockSoap();
             soapText.color = Color.gray;
-            player.skillPoint--;
+            GameManager.Instance.UpdateSkillPoint(player.skillPoint-1);
             Button soapButton = soapButt.GetComponent<Button>();
             soapButton.enabled = false;
         }
@@ -181,7 +181,7 @@ public class SkillTree : MonoBehaviour
         {
             healChecker++;
             healText.color = Color.gray;
-            player.skillPoint--;
+            GameManager.Instance.UpdateSkillPoint(player.skillPoint-1);
             Button healButton = healButt.GetComponent<Button>();
             healButton.enabled = false;
         }
@@ -193,7 +193,7 @@ public class SkillTree : MonoBehaviour
         {
             heal2Checker++;
             heal2Text.color = Color.gray;
-            player.skillPoint--;
+            GameManager.Instance.UpdateSkillPoint(player.skillPoint-1);
             Button heal2Button = heal2Butt.GetComponent<Button>();
             heal2Button.enabled = false;
         }
@@ -239,7 +239,7 @@ public class SkillTree : MonoBehaviour
         }
     }
 
-    void Awake()
+    public void Awake()
     {
         player = GameManager.Instance.player.GetComponent<PlayerScript>();
     }

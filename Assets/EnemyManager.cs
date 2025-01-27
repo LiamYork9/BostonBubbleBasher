@@ -42,8 +42,11 @@ public class EnemyManager : MonoBehaviour
         {
             queue[i].gameObject.GetComponent<enemyStateMachiene>().isWaiting = true;
         }
+        if(queue.Count>0)
+        {
         queue[0].gameObject.GetComponent<enemyStateMachiene>().nextInQueue = true;
         queue.Add(queue[0].gameObject);
         queue.RemoveAt(0);
+        }
     }
 }
